@@ -203,7 +203,7 @@
     // .4 Heatmap for students per department
     //
 
-        const deptData = d3.rollups(data, v => v.length, d => d.ianolectivo, d => d.nomedepartamento);
+    const deptData = d3.rollups(data, v => v.length, d => d.ianolectivo, d => d.dep_sigla_oficial.toUpperCase());
 
         const svgHeatmap = d3.select("#studentsPerDeptChart").append("svg")
                             .attr("width", 800)  // Adjust width as needed
