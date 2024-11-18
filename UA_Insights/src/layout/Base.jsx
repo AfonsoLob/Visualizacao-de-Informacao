@@ -5,6 +5,7 @@ const Base = ({ children }) => {
 
   return (
     <>
+    <div className="flex h-screen">
       <Filter />
       <div className="flex-1 p-4">
         {/* <div className="navbar bg-base-100">
@@ -61,6 +62,7 @@ const Base = ({ children }) => {
         </div> */}
         {children}
       </div>
+    </div>
     </>
   );
 };

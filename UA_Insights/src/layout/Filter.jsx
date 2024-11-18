@@ -14,7 +14,7 @@ export const Filter = () => {
     };
 
     return (
-        <div className="flex h-screen">
+        // <div className="flex h-screen">
             <div className="w-1/4 bg-gray-800 text-white p-4">
                 <h2 className="text-xl font-bold mb-4">Filters</h2>
                 <div className="mb-6">
@@ -68,7 +68,7 @@ export const Filter = () => {
                 </div>
                 {/* Add more filters as needed */}
             </div>
-        </div>
+        // </div>
     );
 };
 
