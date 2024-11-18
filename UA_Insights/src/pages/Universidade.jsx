@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { loadAndProcessData } from "../d3/universidade_Script";
+import StudentsAreaChart from "../components/StudentsAreaChart";
+import ApprovalLineChart from "../components/ApprovalLineChart";
 
 const Universidade = () => {
-    const csvFile = "../../public/notas-alunos-2012-2022-corrigido.csv";
+    const csvFile = "/notas-alunos-2012-2022-corrigido.csv";
 
     // References to graph containers
     const approvedPerYearRef = useRef(null);
@@ -21,20 +23,20 @@ const Universidade = () => {
     }, [csvFile]);
 
     return (
-        <div className="graphGroup">
-            <div className="graph" ref={approvedPerYearRef}>
-                <h2>Taxa de Aprovados / Ano</h2>
-            </div>
-            <div className="graph" ref={regimeRef}>
-                <h2>Regime</h2>
-            </div>
-            <div className="graph" ref={studentsPerYearRef}>
-                <h2>Estudantes / Ano</h2>
-            </div>
-            <div id="heatmap" className="graph" ref={studentsPerDeptRef}>
-                <h2>Estudantes / Departamento</h2>
-            </div>
+      <div className="graphGroup">
+        <div className="graph" style={{ backgroundColor: '#2d3748' }}>
+          <ApprovalLineChart/>
         </div>
+        <div className="graph" ref={regimeRef} style={{ backgroundColor: '#2d3748' }}>
+          <h2>Regime</h2>
+        </div>
+        <div className="graph" style={{ backgroundColor: '#2d3748' }}>
+          <StudentsAreaChart/>
+        </div>
+        <div id="heatmap" className="graph" ref={studentsPerDeptRef} style={{ backgroundColor: '#2d3748' }}>
+          <h2>Estudantes / Departamento</h2>
+        </div>
+      </div>
     );
 };
 
