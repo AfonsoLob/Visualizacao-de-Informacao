@@ -1,33 +1,41 @@
-// FILE: universidade.jsx
-// import React, { useEffect } from 'react';
-// import { loadAndProcessData } from '../d3/universidade_Script';
-
-// const Universidade = () => {
-//   useEffect(() => {
-//     loadAndProcessData();
-//   }, []);
-
-//   return (
-//     <div className="grid grid-cols-4 gap-10 place-items-center">
-//       {/* <h1>BOAS</h1> */}
-//       <div id="approvedPerYearChart" className="col-span-2"></div>
-//       <div id="regimeChart" className="col-span-2"></div>
-//       <div id="studentsPerYearChart" className="col-span-2"></div>
-//       <div id="studentsPerDeptChart" className="col-span-4"></div>
-//     </div>
-//   );
-// };
-
-// export default Universidade;
-import React from 'react';
-import ApprovedGradesChart from '../components/ApprovedGradesChart';
+import React, { useEffect, useRef } from "react";
+import { loadAndProcessData } from "../d3/universidade_Script";
 
 const Universidade = () => {
-  return (
-    <div className="p-4">
-      <ApprovedGradesChart data={data} />
-    </div>
-  );
+    const csvFile = "../../public/notas-alunos-2012-2022-corrigido.csv";
+
+    // References to graph containers
+    const approvedPerYearRef = useRef(null);
+    const regimeRef = useRef(null);
+    const studentsPerYearRef = useRef(null);
+    const studentsPerDeptRef = useRef(null);
+
+    useEffect(() => {
+        const containerRefs = [
+            approvedPerYearRef.current,
+            regimeRef.current,
+            studentsPerYearRef.current,
+            studentsPerDeptRef.current,
+        ];
+        loadAndProcessData(csvFile, containerRefs);
+    }, [csvFile]);
+
+    return (
+        <div className="graphGroup">
+            <div className="graph" ref={approvedPerYearRef}>
+                <h2>Taxa de Aprovados / Ano</h2>
+            </div>
+            <div className="graph" ref={regimeRef}>
+                <h2>Regime</h2>
+            </div>
+            <div className="graph" ref={studentsPerYearRef}>
+                <h2>Estudantes / Ano</h2>
+            </div>
+            <div id="heatmap" className="graph" ref={studentsPerDeptRef}>
+                <h2>Estudantes / Departamento</h2>
+            </div>
+        </div>
+    );
 };
 
 export default Universidade;
