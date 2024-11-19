@@ -2,32 +2,28 @@ import React, { useState, useEffect } from "react";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 import * as d3 from "d3";
 
-const ApprovedByExamTypeChart = () => {
+const CourseApprovalsByExamType = () => {
   const [data, setData] = useState([]);
-  const [subjects, setSubjects] = useState([]); // Lista de idisciplinaids disponíveis
   const [selectedSubject, setSelectedSubject] = useState(""); // idisciplinaid selecionada
 
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        // Carregar os dados do CSV
-        const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv"); // Substituir pelo caminho correto
+    useEffect(() => {
+      const pollFilterDropdown = () => {
+        const filterDropdown = Array.from(document.querySelectorAll("label.block.mb-2"))
+          .find((label) => label.textContent === "Disciplina")?.nextElementSibling;
 
-        // Obter a lista única de idisciplinaids
-        const subjectList = Array.from(new Set(rawData.map((d) => d.idisciplinaid))).sort();
-        setSubjects(subjectList);
+        if (filterDropdown?.value) {
+          setSelectedSubject(filterDropdown.value);
+          const updateSelectedDisciplina = () => setSelectedSubject(filterDropdown.value);
+          filterDropdown.addEventListener("change", updateSelectedDisciplina);
 
-        // Definir uma idisciplinaid padrão (primeira na lista)
-        if (subjectList.length > 0) {
-          setSelectedSubject(subjectList[0]);
+          return () => filterDropdown.removeEventListener("change", updateSelectedDisciplina);
+        } else {
+          setTimeout(pollFilterDropdown, 100);
         }
-      } catch (error) {
-        console.error("Erro ao carregar os dados:", error);
-      }
-    };
+      };
 
-    loadData();
-  }, []);
+      pollFilterDropdown();
+    }, []);
 
   useEffect(() => {
     const processChartData = async () => {
@@ -68,22 +64,6 @@ const ApprovedByExamTypeChart = () => {
     <div>
       <h3>Percentagem de Aprovados por Tipo de Exame</h3>
 
-      {/* Selector para a idisciplinaid */}
-      <label>
-        Selecione o código da disciplina:{" "}
-        <select
-          style={{backgroundColor: "#ffffff", color: "#2d3448"}}
-          value={selectedSubject}
-          onChange={(e) => setSelectedSubject(e.target.value)}
-        >
-          {subjects.map((subject) => (
-            <option key={subject} value={subject}>
-              {subject}
-            </option>
-          ))}
-        </select>
-      </label>
-
       <PieChart width={600} height={300}>
         <Pie
           data={data}
@@ -105,4 +85,4 @@ const ApprovedByExamTypeChart = () => {
   );
 };
 
-export default ApprovedByExamTypeChart;
+export default CourseApprovalsByExamType;
