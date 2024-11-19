@@ -5,7 +5,7 @@ import { FaSmile } from "react-icons/fa";
 
 const Dashboard = () => {
   return (
-    <div className="min-h-screen p-6">
+    <div className="m-6">
       {/* Hero Section */}
       <div className="hero bg-gray-800 text-white rounded-xl mb-4">
         <div className="hero-content text-center">
@@ -68,7 +68,7 @@ const Dashboard = () => {
 
       {/* Getting Started */}
       <div className="card bg-gray-800 shadow-xl text-white">
-        <div className="card-body">
+        <div className="card-body p-0">
           <h2 className="card-title">Getting Started</h2>
           <div className="steps steps-vertical">
             <div className="step step-success">Select view level (University/Department/Course/Subject)</div>
