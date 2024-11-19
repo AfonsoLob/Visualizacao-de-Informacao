@@ -59,7 +59,7 @@ const CourseApprovalsByExamType = () => {
   }, [selectedSubject]);
 
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#A28BFE", "#FF6384"]; // Paleta de cores
-  console.log(selectedSubject)
+
   return (
     <div>
       <h3>Percentagem de Aprovados por Tipo de Exame</h3>
