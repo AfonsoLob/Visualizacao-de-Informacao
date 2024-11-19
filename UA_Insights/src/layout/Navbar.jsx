@@ -9,11 +9,17 @@ export const Navbar = () => {
     };
     
     return (
-        <div className="navbar bg-gray-800 rounded-xl mb-2">
+        <div className="navbar bg-gray-800 rounded-xl">
             <div className="navbar-start">
+                { isActive("/") ?
+                <Link to="/" className="btn btn-primary text-xl text-white">
+                    UA Insights
+                </Link>
+                :
                 <Link to="/" className="btn btn-ghost text-xl text-white">
                     UA Insights
                 </Link>
+                }
             </div>
             
             <div className="navbar-center">
@@ -29,32 +35,32 @@ export const Navbar = () => {
                     </Link>
                     }
 
-                    { isActive("/students") ?
-                    <Link to="/students" className="btn btn-primary text-white">
+                    { isActive("/departamento") ?
+                    <Link to="/departamento" className="btn btn-primary text-white">
                         Departamento
                     </Link>
                     :
-                    <Link to="/students" className="btn btn-ghost text-white">
+                    <Link to="/departamento" className="btn btn-ghost text-white">
                         Departamento
                     </Link>
                     }
 
-                    { isActive("/courses") ?
-                    <Link to="/courses" className="btn btn-primary text-white">
+                    { isActive("/curso") ?
+                    <Link to="/curso" className="btn btn-primary text-white">
                         Curso
                     </Link>
                     :
-                    <Link to="/courses" className="btn btn-ghost text-white">
+                    <Link to="/curso" className="btn btn-ghost text-white">
                         Curso
                     </Link>
                     }
 
-                    { isActive("/departments") ?
-                    <Link to="/departments" className="btn btn-primary text-white">
+                    { isActive("/cadeira") ?
+                    <Link to="/cadeira" className="btn btn-primary text-white">
                         Cadeira
                     </Link>
                     :
-                    <Link to="/departments" className="btn btn-ghost text-white">
+                    <Link to="/cadeira" className="btn btn-ghost text-white">
                         Cadeira
                     </Link>
                     }              
