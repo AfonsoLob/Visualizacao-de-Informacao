@@ -1,6 +1,7 @@
 // src/pages/Dashboard.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaSmile } from "react-icons/fa";
 
 const Dashboard = () => {
   return (
@@ -9,29 +10,31 @@ const Dashboard = () => {
       <div className="hero bg-gray-800 text-white rounded-xl mb-4">
         <div className="hero-content text-center">
           <div className="max-w-md">
-            <img src="/UA_logo.png" alt="UA Logo" className="w-48 mx-auto mb-4" />
+            <img src="/UA_logo3.png" alt="UA Logo" className="w-16 mx-auto mb-4" />
             <h1 className="text-5xl font-bold">UA Insights</h1>
-            <p className="py-6">Explore academic performance data across departments, courses, and subjects at the University of Aveiro.</p>
+            <p className="py-6">Visualize a informação de performance académica dos alunos através dos departamentos, cursos e cadeiras da Universidade Aveiro.</p>
           </div>
         </div>
       </div>
 
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
-        <div className="stat bg-gray-800 text-white rounded-xl">
-          <div className="stat-title">Students</div>
-          <div className="stat-value">10K+</div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4 place-items-center">
+        <div className="stat bg-gray-800 text-white rounded-xl text-center w-full">
+          <div className="stat-title">Alunos</div>
+          <div className="stat-value">15mil+</div>
           <div className="stat-desc">2012-2022</div>
         </div>
-        <div className="stat bg-gray-800 text-white rounded-xl">
-          <div className="stat-title">Courses</div>
+        <div className="stat bg-gray-800 text-white rounded-xl text-center w-full">
+          <div className="stat-title">Cursos</div>
           <div className="stat-value">50+</div>
-          <div className="stat-desc">Across departments</div>
+          <div className="stat-desc">Em diversos departamentos</div>
         </div>
-        <div className="stat bg-gray-800 text-white rounded-xl">
-          <div className="stat-title">Departments</div>
-          <div className="stat-value">15+</div>
-          <div className="stat-desc">Academic units</div>
+        <div className="stat bg-gray-800 text-white rounded-xl text-center w-full">
+          <div className="stat-title">Departamentos</div>
+          <div className="stat-value">16</div>
+          <div className="stat-desc flex items-center justify-center gap-1">
+            Deti é o melhor <FaSmile className="inline-block  size-4"  />
+          </div>
         </div>
       </div>
 
