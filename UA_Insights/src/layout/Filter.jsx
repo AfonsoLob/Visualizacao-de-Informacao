@@ -3,7 +3,7 @@ import Slider from "@mui/material/Slider";
 import { useLocation } from "react-router-dom";
 import * as d3 from "d3";
 
-export const Filter = ({ onFilterChange }) => {
+export const Filter = () => {
   const [yearRange, setYearRange] = useState([2012, 2022]);
   const [disciplinas, setDisciplinas] = useState([]); 
   const [selectedDisciplina, setSelectedDisciplina] = useState("");
@@ -77,7 +77,6 @@ export const Filter = ({ onFilterChange }) => {
   const handleDisciplinaChange = (event) => {
     const value = event.target.value;
     setSelectedDisciplina(value);
-    onFilterChange(value); 
   };
 
   // Load unique disciplinas (idisciplinaid) from the CSV file
