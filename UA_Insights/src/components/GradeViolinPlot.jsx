@@ -37,7 +37,7 @@ const GradeViolinPlot = () => {
         const groupedData = d3.group(filteredData, (d) => d.ianolectivo);
         const processedData = Array.from(groupedData, ([year, records]) => ({
           year,
-          grades: records.map((record) => +record.nota), // 
+          grades: records.filter((record) => record.avaliado === "1").map((record) => +record.nota),
         }));
         console.log("Violin Plot Data:", processedData);
         setData(processedData);
