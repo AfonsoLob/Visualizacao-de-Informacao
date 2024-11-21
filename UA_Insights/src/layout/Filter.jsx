@@ -5,8 +5,8 @@ import * as d3 from "d3";
 
 export const Filter = () => {
   const [yearRange, setYearRange] = useState([2012, 2022]);
-  const [disciplinas, setDisciplinas] = useState([]); 
-  const [selectedDisciplina, setSelectedDisciplina] = useState("");
+  const [dynamicOptions, setDynamicOptions] = useState([]); // Holds dynamic options for the current filter
+  const [selectedOption, setSelectedOption] = useState("");
   const minYear = 2012;
   const maxYear = 2022;
   const location = useLocation();
@@ -42,8 +42,8 @@ export const Filter = () => {
     "/curso": [
       {
         label: "Curso",
-        type: "select",
-        options: ["LEI", "LECI", "MIEET"],
+        type: "dynamic-select",
+        code: "icursocod",
       },
       {
         label: "Semestre",
@@ -55,6 +55,7 @@ export const Filter = () => {
       {
         label: "Disciplina",
         type: "dynamic-select",
+        code: "idisciplinaid",
       },
       {
         label: "Época",
@@ -74,31 +75,40 @@ export const Filter = () => {
     setYearRange(newValue);
   };
 
-  const handleDisciplinaChange = (event) => {
+  const handleOptionChange = (event) => {
     const value = event.target.value;
-    setSelectedDisciplina(value);
+    setSelectedOption(value);
   };
 
-  // Load unique disciplinas (idisciplinaid) from the CSV file
-  useEffect(() => {
-    const loadDisciplinas = async () => {
-      try {
-        const data = await d3.csv(csvFile); // Load the CSV file
-        const uniqueDisciplinas = Array.from(
-          new Set(data.map((d) => d.idisciplinaid))
-        ).sort(); // Extract and sort unique idisciplinaid values
-        setDisciplinas([...uniqueDisciplinas]); // Add "Todas" as the first option
-      } catch (error) {
-        console.error("Erro ao carregar disciplinas:", error);
-      }
-    };
+  // General function to load unique options dynamically
+  const loadDynamicOptions = async (field) => {
+    try {
+      const data = await d3.csv(csvFile);
+      const uniqueOptions = Array.from(
+        new Set(data.map((d) => d[field]))
+      ).sort(); // Extract and sort unique values
+      setDynamicOptions(uniqueOptions);
+    } catch (error) {
+      console.error(`Erro ao carregar opções para ${field}:`, error);
+    }
+  };
 
-    if (location.pathname === "/cadeira") {
-      loadDisciplinas();
+  // UseEffect to handle dynamic field loading based on the current path
+  useEffect(() => {
+    const currentFilters = filterConfig[location.pathname];
+    const dynamicFilter = currentFilters?.find(
+      (filter) => filter.type === "dynamic-select"
+    );
+
+    if (dynamicFilter) {
+      loadDynamicOptions(dynamicFilter.code); // Load options for the specified field
+    } else {
+      setDynamicOptions([]); // Clear options if no dynamic filter is active
     }
   }, [location.pathname]);
 
-  const currentFilters = filterConfig[location.pathname] || filterConfig["/universidade"];
+  const currentFilters =
+    filterConfig[location.pathname] || filterConfig["/universidade"];
 
   const renderFilter = (filter) => {
     switch (filter.type) {
@@ -110,18 +120,18 @@ export const Filter = () => {
                 {option}
               </option>
             ))}
-          </select> 
+          </select>
         );
       case "dynamic-select":
         return (
-          <select 
+          <select
             className="w-full p-2 rounded bg-gray-700 border border-gray-600 text-white"
-            value={selectedDisciplina}
-            onChange={handleDisciplinaChange}    
-        >
-            {disciplinas.map((disciplina) => (
-              <option key={disciplina} value={disciplina}>
-            {disciplina}
+            value={selectedOption}
+            onChange={handleOptionChange}
+          >
+            {dynamicOptions.map((option) => (
+              <option key={option} value={option}>
+                {option}
               </option>
             ))}
           </select>
