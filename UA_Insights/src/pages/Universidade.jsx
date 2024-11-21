@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { loadAndProcessData } from "../d3/universidade_Script";
-import StudentsAreaChart from "../components/StudentsAreaChart";
-import ApprovalLineChart from "../components/ApprovalLineChart";
+import StudentsAreaChart from "../components/universidade/StudentsAreaChart";
+import ApprovalLineChart from "../components/universidade/ApprovalLineChart";
 
 const Universidade = () => {
     const csvFile = "/notas-alunos-2012-2022-corrigido.csv";
