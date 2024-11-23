@@ -122,8 +122,13 @@ const AverageGrade = () => {
                             .attr("opacity", 0.7);
                         
                         tooltip.transition()
-                            .duration(500)
-                            .style("opacity", 0);
+                            .duration(200)
+                            .style("opacity", 0)
+                            .on("end", () => {
+                                tooltip.style("top", "-100px")
+                                       .style("left", "-100px");
+                            });
+                        
                     });
 
                 // Median line
