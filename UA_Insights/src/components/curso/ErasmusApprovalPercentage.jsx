@@ -1,31 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
 import * as d3 from "d3";
+import { useFilters } from "../../context/FilterContext";
+
 
 const ErasmusApprovalPercentage = () => {
     const [data, setData] = useState([]);
-    const [selectedCurso, setSelectedCurso] = useState(""); // curso selecionada
-        
-    // Wait for the filter dropdown to be available and set its initial value
-    useEffect(() => {
-            const pollFilterDropdown = () => {
-                    const filterDropdown = Array.from(document.querySelectorAll("label.block.mb-2"))
-                    .find((label) => label.textContent === "Curso")?.nextElementSibling;
+    const { filters } = useFilters();
+  const selectedCurso = filters.Curso?.value;
     
-                    if (filterDropdown?.value) {
-                    setSelectedCurso(filterDropdown.value);
-                    const updateSelectedCurso = () => setSelectedCurso(filterDropdown.value);
-                    filterDropdown.addEventListener("change", updateSelectedCurso);
     
-                    return () => filterDropdown.removeEventListener("change", updateSelectedCurso);
-                    } else {
-                    setTimeout(pollFilterDropdown, 100);
-                    }
-            };
-    
-            pollFilterDropdown();
-            }, []);
-    
+
     useEffect(() => {
         const processChartData = async () => {
             try {
