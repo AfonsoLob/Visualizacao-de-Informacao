@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import * as d3 from "d3";
 
 const StudentsAreaChart = () => {
@@ -34,32 +34,32 @@ const StudentsAreaChart = () => {
   }, []);
 
   return (
-    <div>
+    <div className="w-full">
       <h3>Estudantes / Ano</h3>
-      <AreaChart
-        width={600}
-        height={300}
-        data={data}
-        margin={{ top: 20, right: 30, left: 20, bottom: 0 }}
-      >
-        <defs>
-          <linearGradient id="colorestudantes" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="#68e713" stopOpacity={0.8} />
-            <stop offset="95%" stopColor="#68e713" stopOpacity={0} />
-          </linearGradient>
-        </defs>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" tickFormatter={(tick) => d3.format("d")(tick)} stroke="#ffffff" />
-        <YAxis stroke="#ffffff"/>
-        <Tooltip contentStyle={{ backgroundColor: '#2d3448' }}/>
-        <Area
-          type="monotone"
-          dataKey="estudantes"
-          stroke="#68e713"
-          fillOpacity={1}
-          fill="url(#colorestudantes)"
-        />
-      </AreaChart>
+      <ResponsiveContainer width="100%" height={300}>
+        <AreaChart
+          data={data}
+          margin={{ top: 20, right: 30, left: 0, bottom: 0 }}
+        >
+          <defs>
+            <linearGradient id="colorestudantes" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#68e713" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="#68e713" stopOpacity={0} />
+            </linearGradient>
+          </defs>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" tickFormatter={(tick) => d3.format("d")(tick)} stroke="#ffffff" />
+          <YAxis stroke="#ffffff"/>
+          <Tooltip contentStyle={{ backgroundColor: '#2d3448' }}/>
+          <Area
+            type="monotone"
+            dataKey="estudantes"
+            stroke="#68e713"
+            fillOpacity={1}
+            fill="url(#colorestudantes)"
+          />
+        </AreaChart>
+      </ResponsiveContainer>
     </div>
   );
 };

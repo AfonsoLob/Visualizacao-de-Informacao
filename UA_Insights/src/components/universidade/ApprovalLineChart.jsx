@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import * as d3 from "d3";
 
 const ApprovalPerYearChart = () => {
@@ -29,21 +29,21 @@ const ApprovalPerYearChart = () => {
   }, []);
 
 return (
-    <div>
+    <div className="w-full">
         <h3>Taxa de Aprovados / Ano</h3>
-        <LineChart
-            width={600}
-            height={300}
-            data={data}
-            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-        >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="year" tickFormatter={(tick) => d3.format("d")(tick)} stroke="#ffffff"/>
-            <Tooltip contentStyle={{ backgroundColor: '#2d3448' }} formatter={(value) => `${value.toFixed(2)}%`} />
-            <Legend />
-            <YAxis domain={[0, 100]} stroke="#ffffff"/>
-            <Line type="monotone" dataKey="percentage" stroke="#68e713" />
-        </LineChart>
+        <ResponsiveContainer width="100%" height={300}>
+          <LineChart
+              data={data}
+              margin={{ top: 5, right: 30, left: 0, bottom: 0 }}
+          >
+              <CartesianGrid strokeDasharray="3 3"/>
+              <XAxis dataKey="year" tickFormatter={(tick) => d3.format("d")(tick)} stroke="#ffffff"/>
+              <Tooltip contentStyle={{ backgroundColor: '#2d3448' }} formatter={(value) => `${value.toFixed(2)}%`} />
+              <Legend />
+              <YAxis domain={[0, 100]} stroke="#ffffff"/>
+              <Line type="monotone" dataKey="percentage" stroke="#68e713" />
+          </LineChart>
+        </ResponsiveContainer>
     </div>
 );
 };
