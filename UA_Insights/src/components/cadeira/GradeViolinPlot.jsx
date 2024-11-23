@@ -2,12 +2,29 @@ import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 import { useFilters } from "../../context/FilterContext";
 
-
 const GradeViolinPlot = () => {
   const svgRef = useRef();
+  const wrapperRef = useRef();
   const [data, setData] = useState([]);
   const { filters } = useFilters();
   const selectedSubject = filters.Disciplina?.value;
+
+  const [containerWidth, setContainerWidth] = useState(700); // Initial width
+
+  // Function to handle window resizing
+  const updateWidth = () => {
+    if (wrapperRef.current) {
+      setContainerWidth(wrapperRef.current.offsetWidth);
+    }
+  };
+
+  useEffect(() => {
+    // Add resize listener
+    window.addEventListener("resize", updateWidth);
+    // Initial width setting
+    updateWidth();
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,7 +40,6 @@ const GradeViolinPlot = () => {
           year,
           grades: records.filter((record) => record.avaliado === "1").map((record) => +record.nota),
         }));
-        console.log("Violin Plot Data:", processedData);
         setData(processedData);
       } catch (error) {
         console.error("Error loading data:", error);
@@ -38,20 +54,20 @@ const GradeViolinPlot = () => {
   useEffect(() => {
     if (!data.length) return;
 
-    // Set dimensions
-    const margin = { top: 10, right: 30, bottom: 30, left: 40 };
-    const width = 700 - margin.left - margin.right;
-    const height = 350 - margin.top - margin.bottom;
-
     // Clear previous SVG content
     d3.select(svgRef.current).selectAll("*").remove();
+
+    // Set dimensions based on the container width
+    const margin = { top: 10, right: 30, bottom: 30, left: 40 };
+    const width = containerWidth - margin.left - margin.right;
+    const height = 300; // Fixed height
 
     // Append SVG
     const svg = d3
       .select(svgRef.current)
       .append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
+      .attr("width", containerWidth) // Responsive width
+      .attr("height", height + margin.top + margin.bottom) // Fixed height
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -113,10 +129,10 @@ const GradeViolinPlot = () => {
           .y((d) => y(d.x0))
           .curve(d3.curveCatmullRom)
       );
-  }, [data]);
+  }, [data, containerWidth]);
 
   return (
-    <div>
+    <div ref={wrapperRef} style={{ width: "100%" }}>
       <h2>Distribuição das notas por ano</h2>
       <div ref={svgRef}></div>
     </div>
