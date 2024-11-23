@@ -96,8 +96,10 @@ export const Filter = () => {
           <Select
             styles={customStyles}
             options={filter.isDynamic ? 
-              dynamicOptions[filter.field] || [] : 
-              filter.options.map(opt => ({ value: opt, label: opt }))}
+              (filter.label === "Departamento" ? 
+                (dynamicOptions[filter.field] || []).map(opt => ({ ...opt, label: opt.label.toUpperCase() })) : 
+                dynamicOptions[filter.field] || []) : 
+              filter.options.map(opt => ({ value: opt, label: filter.label === "Departamento" ? opt.toUpperCase() : opt }))}
             onChange={(value) => updateFilter(filter.label, value)}
             value={filters[filter.field]}
             placeholder={`Select ${filter.label}...`}

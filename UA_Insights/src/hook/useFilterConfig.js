@@ -22,13 +22,15 @@ export const useFilterConfig = () => {
       {
         type: 'select',
         label: 'Regime',
-        options: ['Todos', 'Ordinário', 'Trabalhador-Estudante'],
+        field: 'nome_regime',
+        isDynamic: true,
       }
     ],
     '/departamento': [
       {
         type: 'select',
         label: 'Departamento',
+        field: 'dep_sigla_oficial',
         isDynamic: true,
       }
     ],
