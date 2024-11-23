@@ -25,6 +25,13 @@ export const useFilterConfig = () => {
         options: ['Todos', 'Ordinário', 'Trabalhador-Estudante'],
       }
     ],
+    '/departamento': [
+      {
+        type: 'select',
+        label: 'Departamento',
+        isDynamic: true,
+      }
+    ],
     '/curso': [
       {
         type: 'select',

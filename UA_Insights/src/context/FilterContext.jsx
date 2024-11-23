@@ -5,14 +5,15 @@ const FilterContext = createContext();
 export const FilterProvider = ({ children }) => {
   const [filters, setFilters] = useState({
     years: [2012, 2022],
-    subject: null,
-    course: null,
-    department: null,
-    regime: null,
+    Disciplina: null,
+    Curso: null,
+    Departamento: null,
+    Regime: null,
   });
 
   const updateFilter = (key, value) => {
     setFilters(prev => ({ ...prev, [key]: value }));
+    console.log('Filters:', filters);
   };
 
   return (

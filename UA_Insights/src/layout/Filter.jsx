@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from "react";
 import Slider from "@mui/material/Slider";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import { useFilterConfig } from '../hook/useFilterConfig';
 import { useFilters } from '../context/FilterContext';
 import * as d3 from "d3";
@@ -15,64 +15,11 @@ export const Filter = () => {
   const minYear = 2012;
   const maxYear = 2022;
 
-  const [selectedOption, setSelectedOption] = useState("");
-  const location = useLocation();
-  const csvFile = "/notas-alunos-2012-2022-corrigido.csv";
+  // const [selectedOption, setSelectedOption] = useState("");
+  // const location = useLocation();
+  // const csvFile = "/notas-alunos-2012-2022-corrigido.csv";
 
   
-
-  // // Mocked filter configurations
-  // const filterConfig = {
-  //   "/universidade": [
-  //     {
-  //       label: "Regime",
-  //       type: "select",
-  //       options: ["Todos", "Ordinário", "Trabalhador-Estudante"],
-  //     },
-  //     {
-  //       label: "Tipo de Acesso",
-  //       type: "select",
-  //       options: ["Todos", "Regime Geral", "Transferência"],
-  //     },
-  //   ],
-  //   "/departamento": [
-  //     {
-  //       label: "Departamento",
-  //       type: "select",
-  //       options: ["DETI", "DBIO", "DMAT"],
-  //     },
-  //     {
-  //       label: "Taxa de Aprovação",
-  //       type: "select",
-  //       options: ["Todas", ">50%", ">75%"],
-  //     },
-  //   ],
-  //   "/curso": [
-  //     {
-  //       label: "Curso",
-  //       type: "dynamic-select",
-  //       code: "icursocod",
-  //     },
-  //     {
-  //       label: "Semestre",
-  //       type: "select",
-  //       options: ["Todos", "1º", "2º"],
-  //     },
-  //   ],
-  //   "/cadeira": [
-  //     {
-  //       label: "Disciplina",
-  //       type: "dynamic-select",
-  //       code: "idisciplinaid",
-  //     },
-  //     {
-  //       label: "Época",
-  //       type: "select",
-  //       options: ["Todas", "Normal", "Recurso"],
-  //     },
-  //   ],
-  // };
-
   // Custom styles for react-select to match dark theme
   const customStyles = {
     control: (base) => ({
@@ -118,27 +65,6 @@ export const Filter = () => {
   };
   // End custom 
 
-  // Updated handleOptionChange for React Select
-  // const handleOptionChange = (selectedValue) => {
-  //   setSelectedOption(selectedValue);
-  //   // If you need to notify parent component
-  //   // if (props.onFilterChange) {
-  //   //   props.onFilterChange(selectedValue);
-  //   // }
-  // };
-
-  // General function to load unique options dynamically
-  // codigo esta uma confusao
-  // const loadDynamicOptions = async (field) => {
-  //   try {
-  //     const data = await d3.csv('/notas-alunos-2012-2022-corrigido.csv');
-  //     return Array.from(new Set(data.map(d => d[field]))).sort();
-  //   } catch (error) {
-  //     console.error(`Erro ao carregar opções para ${field}:`, error);
-  //     return [];
-  //   }
-  // };
-
   useEffect(() => {
     const loadOptions = async () => {
       const dynamicFilters = filterConfig.filter(f => f.isDynamic);
@@ -172,7 +98,7 @@ export const Filter = () => {
             options={filter.isDynamic ? 
               dynamicOptions[filter.field] || [] : 
               filter.options.map(opt => ({ value: opt, label: opt }))}
-            onChange={(value) => updateFilter(filter.field, value)}
+            onChange={(value) => updateFilter(filter.label, value)}
             value={filters[filter.field]}
             placeholder={`Select ${filter.label}...`}
           />
@@ -182,62 +108,7 @@ export const Filter = () => {
     }
   };
 
-  // UseEffect to handle dynamic field loading based on the current path
-  // useEffect(() => {
-  //   const currentFilters = filterConfig[location.pathname];
-  //   const dynamicFilter = currentFilters?.find(
-  //     (filter) => filter.type === "dynamic-select"
-  //   );
-
-  //   if (dynamicFilter) {
-  //     loadDynamicOptions(dynamicFilter.code); // Load options for the specified field
-  //   } else {
-  //     setDynamicOptions([]); // Clear options if no dynamic filter is active
-  //   }
-  // }, [location.pathname]);
-
-  // const currentFilters =
-  //   filterConfig[location.pathname] || filterConfig["/universidade"];
-
-  // const renderFilter = (filter) => {
-  //   // x\ options outside switch to avoid scoping issues
-  //   const staticOptions = filter.options?.map(opt => ({
-  //     value: opt,
-  //     label: opt
-  //   })) || [];
-
-  //   const mappedDynamicOptions = dynamicOptions.map(opt => ({
-  //     value: opt,
-  //     label: opt
-  //   }));
-
-
-  //   switch (filter.type) {
-  //     case "select":
-  //       return (
-  //         <Select
-  //           options={staticOptions}
-  //           styles={customStyles}
-  //           placeholder={`Select ${filter.label}...`}
-  //           onChange={(selectedOption) => handleOptionChange(selectedOption?.value)}
-  //         />
-  //       );
-
-  //     case "dynamic-select":
-  //       return (
-  //         <Select
-  //           options={mappedDynamicOptions}
-  //           styles={customStyles}
-  //           placeholder={`Select ${filter.label}...`}
-  //           value={selectedOption ? { value: selectedOption, label: selectedOption } : null}
-  //           onChange={(newValue) => handleOptionChange(newValue?.value)}
-  //         />
-  //       );
-  //     default:
-  //       return null;
-  //   }
-  // };
-
+  
   return (
     <div className="w-1/4 bg-gray-800 text-white p-4">
       <img src="/UA_logo.png" alt="UA Logo" className="w-72 mb-8 mx-auto" />
