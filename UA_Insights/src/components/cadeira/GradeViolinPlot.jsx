@@ -1,29 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
+import { useFilters } from "../../context/FilterContext";
+
 
 const GradeViolinPlot = () => {
   const svgRef = useRef();
   const [data, setData] = useState([]);
-  const [selectedDisciplina, setSelectedDisciplina] = useState(""); // Fetch selected disciplina from filter context
-
-  useEffect(() => {
-    const pollFilterDropdown = () => {
-      const filterDropdown = Array.from(document.querySelectorAll("label.block.mb-2"))
-        .find((label) => label.textContent === "Disciplina")?.nextElementSibling;
-
-      if (filterDropdown?.value) {
-        setSelectedDisciplina(filterDropdown.value);
-        const updateSelectedDisciplina = () => setSelectedDisciplina(filterDropdown.value);
-        filterDropdown.addEventListener("change", updateSelectedDisciplina);
-
-        return () => filterDropdown.removeEventListener("change", updateSelectedDisciplina);
-      } else {
-        setTimeout(pollFilterDropdown, 100);
-      }
-    };
-
-    pollFilterDropdown();
-  }, []);
+  const { filters } = useFilters();
+  const selectedSubject = filters.Disciplina?.value;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,7 +15,7 @@ const GradeViolinPlot = () => {
         const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv");
 
         // Filter data by selected disciplina
-        const filteredData = rawData.filter((d) => d.idisciplinaid === selectedDisciplina);
+        const filteredData = rawData.filter((d) => d.idisciplinaid === selectedSubject);
 
         // Process data for violin plot: Group by year and get grades
         const groupedData = d3.group(filteredData, (d) => d.ianolectivo);
@@ -46,10 +30,10 @@ const GradeViolinPlot = () => {
       }
     };
 
-    if (selectedDisciplina) {
+    if (selectedSubject) {
       fetchData();
     }
-  }, [selectedDisciplina]);
+  }, [selectedSubject]);
 
   useEffect(() => {
     if (!data.length) return;
