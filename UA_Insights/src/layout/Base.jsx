@@ -6,7 +6,7 @@ import { FilterProvider } from '../context/FilterContext';
 const Base = ({ children }) => {
   return (
     <FilterProvider>
-      <div className="flex h-screen">
+      <div className="flex min-h-screen">
         <Filter />
         <div className="flex-1 p-4">
           <Navbar />

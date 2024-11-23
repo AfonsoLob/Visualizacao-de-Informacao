@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import * as d3 from "d3";
 import { useFilters } from "../../context/FilterContext";
 
@@ -55,22 +55,23 @@ return (
           <h2 className="text-gray-500 font-bold">Selecione uma disciplina para visualizar os dados!</h2>
         </div>
       ) : (
-        <div>
+        <div className="w-full">
           <h2>Percentagem de Aprovados por Ano</h2>
-          <BarChart
-            width={700}
-            height={250}
-            data={data}
-            margin={{ top: 10, right: 30, left: 10, bottom: 0 }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="year" stroke="#ffffff" />
-            <YAxis stroke="#ffffff" />
-            <Tooltip contentStyle={{ backgroundColor: '#2d3448' }} />
-            <Legend />
-            <Bar dataKey="percentage" fill="#68e713" />
-          </BarChart>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart
+              data={data}
+              margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="year" stroke="#ffffff" />
+              <YAxis stroke="#ffffff" />
+              <Tooltip contentStyle={{ backgroundColor: '#2d3448' }} />
+              <Legend />
+              <Bar dataKey="percentage" fill="#68e713" />
+            </BarChart>
+          </ResponsiveContainer>
         </div>
+
       )}
     </>
 );
