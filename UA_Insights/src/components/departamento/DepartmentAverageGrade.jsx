@@ -66,7 +66,7 @@ return (
         <ResponsiveContainer width="100%" height={350}>
             <LineChart
                 data={data}
-                margin={{ top: 20, right: 30, left: 0, bottom: 30 }}
+                margin={{ top: 20, right: 30, left: 0, bottom: 0 }}
             >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="year" stroke="#ffffff" tick={{ fontSize: 12 }} interval={1} />
