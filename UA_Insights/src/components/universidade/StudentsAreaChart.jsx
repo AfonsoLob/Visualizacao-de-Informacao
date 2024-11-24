@@ -11,10 +11,10 @@ const StudentsAreaChart = () => {
         // Load the CSV data
         const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv"); // Replace with your CSV path
 
-        // Process the data: Rollup to group by 'ianolectivo' and estudantes occurrences
+        // Process the data: Rollup to group by 'ianolectivo' and count unique 'id_estudantes'
         const studentsPerYear = d3.rollups(
           rawData,
-          (v) => v.length,
+          (v) => new Set(v.map(d => d.id_estudante)).size, // Count unique 'id_estudante'
           (d) => +d.ianolectivo // Ensure 'ianolectivo' is treated as a number
         );
 
@@ -23,7 +23,7 @@ const StudentsAreaChart = () => {
           name: year,
           estudantes,
         }));
-
+        console.log(formattedData);
         setData(formattedData);
       } catch (error) {
         console.error("Error loading data:", error);

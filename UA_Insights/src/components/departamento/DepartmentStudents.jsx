@@ -21,7 +21,7 @@ const DepartmentStudents = () => {
         const processedData = Array.from(groupedData, ([year, records]) => {
           const courseCounts = d3.rollup(
             records,
-            (v) => v.length, // Count students
+            (v) => new Set(v.map(d => d.id_estudante)).size, // Count students
             (d) => d.icursocod // Group by course
           );
 
