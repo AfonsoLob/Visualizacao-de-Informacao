@@ -11,21 +11,22 @@ export const useFilterConfig = () => {
         label: 'Disciplina',
         field: 'idisciplinaid',
         isDynamic: true,
-      },
-      {
-        type: 'select',
-        label: 'Época',
-        options: ['Todas', 'Normal', 'Recurso'],
       }
+      // },
+      // {
+      //   type: 'select',
+      //   label: 'Época',
+      //   options: ['Todas', 'Normal', 'Recurso'],
+      // }
     ],
-    '/universidade': [
-      {
-        type: 'select',
-        label: 'Regime',
-        field: 'nome_regime',
-        isDynamic: true,
-      }
-    ],
+    // '/universidade': [
+    //   {
+    //     type: 'select',
+    //     label: 'Regime',
+    //     field: 'nome_regime',
+    //     isDynamic: true,
+    //   }
+    // ],
     '/departamento': [
       {
         type: 'select',

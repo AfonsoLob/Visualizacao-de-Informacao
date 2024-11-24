@@ -32,29 +32,30 @@ const WorstSubjects = () => {
           
           // Group by subject and calculate fail rate
           const subjectStats = d3.group(yearData, d => d.idisciplinaid);
-          const subjectFailRates = Array.from(subjectStats, ([subject, records]) => {
-            const total = records.length;
-            const failed = records.filter(d => d.aprovado === "0").length;
-            const failRate = (failed / total) * 100;
-            
-            return {
-              subject,
-              failRate: failRate.toFixed(2),
-              name: records[0].idisciplinaid // You might want to map this to actual subject names
-            };
-          });
-
-          // Sort by fail rate and get top 5
-          const top5 = Array.from(subjectStats)
-            .map(([subject, records]) => ({
+          const subjectFailRates = Array.from(subjectStats)
+            .filter(([_, records]) => records.length >= 10) // Only subjects with 10+ entries
+            .map(([subject, records]) => {
+              const total = records.length;
+              const failed = records.filter(d => d.naoaprovado === "1").length;
+              const failRate = (failed / total) * 100;
+              
+              return {
                 subject,
-                failRate: (records.filter(d => d.aprovado === "0").length / records.length * 100).toFixed(2),
-                name: records[0].idisciplinaid
-            }))
-            .sort((a, b) => b.failRate - a.failRate)
-            .slice(0, 5);
-
-          acc[year] = top5;
+                failRate: parseFloat(failRate.toFixed(2)),
+                name: records[0].idisciplinaid,
+                total: total,
+                entries: records.length
+              };
+            })
+            .sort((a, b) => b.failRate - a.failRate) // Sort descending by fail rate
+            .slice(0, 5); // Take only top 5
+        
+          // Handle case where there are less than 5 subjects
+          if (subjectFailRates.length < 5) {
+            console.warn(`Year ${year} has less than 5 subjects with >= 20 entries`);
+          }
+          
+          acc[year] = subjectFailRates;
           return acc;
         }, {});
 

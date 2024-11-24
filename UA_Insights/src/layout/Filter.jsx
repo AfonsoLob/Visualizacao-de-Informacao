@@ -95,8 +95,10 @@ export const Filter = () => {
   const renderFilter = (filter) => {
     switch (filter.type) {
       case 'select':
+        const currentValue = filters[filter.label] || null;
         return (
           <Select
+            key={`${location.pathname}-${filter.label}`}
             styles={customStyles}
             options={filter.isDynamic ? 
               (filter.label === "Departamento" ? 
