@@ -122,7 +122,8 @@ export const Filter = () => {
         <div className="px-4 pt-1 mb-6">
           <Slider
             value={yearRange}
-            onChange={handleYearRangeChange}
+            onChange={(_, newValue) => setYearRange(newValue)}
+            onChangeCommitted={handleYearRangeChange}
             valueLabelDisplay="auto"
             min={minYear}
             max={maxYear}
