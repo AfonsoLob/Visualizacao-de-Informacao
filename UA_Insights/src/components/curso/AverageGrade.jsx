@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import { useFilters } from '../../context/FilterContext';
 import { Oval } from 'react-loader-spinner';
+import { useData } from "../../context/DataContext";
 
 const AverageGrade = () => {
     const [data, setData] = useState([]);
@@ -9,14 +10,13 @@ const AverageGrade = () => {
     const selectedCurso = filters.Curso?.value;
     const yearRange = filters.years;
     const svgRef = useRef();
-    const [loading, setLoading] = useState(false);
+    const { rawData, loading: dataLoading } = useData();
 
     // Data processing useEffect now depends on both selectedCurso and yearRange
     useEffect(() => {
+        if (!selectedCurso || dataLoading) return;
         const processChartData = async () => {
-            setLoading(true);
             try {
-                const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv");
                 const filteredData = rawData.filter((d) => {
                     const year = parseInt(d.ianolectivo);
                     return (
@@ -43,8 +43,6 @@ const AverageGrade = () => {
                 setData(formattedData);
             } catch (error) {
                 console.error("Error processing data:", error);
-            } finally {
-                setLoading(false);
             }
         };
 
@@ -173,7 +171,7 @@ const AverageGrade = () => {
 
     return (
         <>
-            {loading ? (
+            {dataLoading ? (
                 <div className="flex flex-col items-center w-full h-full p-2">
                     <div className="flex-1 w-full flex items-center justify-center">
                         <Oval

@@ -3,6 +3,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "rec
 import * as d3 from "d3";
 import { useFilters } from "../../context/FilterContext";
 import { Oval } from 'react-loader-spinner';
+import { useData } from "../../context/DataContext";
 
 
 const ErasmusApprovalPercentage = () => {
@@ -10,14 +11,12 @@ const ErasmusApprovalPercentage = () => {
     const { filters } = useFilters();
     const selectedCurso = filters.Curso?.value;
     const yearRange = filters.years;
-    const [loading, setLoading] = useState(false);
+    const { rawData, loading: dataLoading } = useData();
 
     useEffect(() => {
         const processChartData = async () => {
-            setLoading(true);
+            if (!selectedCurso || dataLoading) return;
             try {
-                const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv"); // Substituir pelo caminho correto
-
                 // Filtrar para a curso selecionada
                 const filteredData = rawData.filter((d) => {
                     const year = parseInt(d.ianolectivo);
@@ -45,8 +44,6 @@ const ErasmusApprovalPercentage = () => {
                 setData(formattedData);
             } catch (error) {
                 console.error("Erro ao processar os dados:", error);
-            } finally {
-                setLoading(false);
             }
         };
 
@@ -57,7 +54,7 @@ const ErasmusApprovalPercentage = () => {
 
 return (
         <>
-            {loading ? (
+            {dataLoading ? (
                 <div className="flex flex-col items-center w-full h-full p-2">
                 <div className="flex-1 w-full flex items-center justify-center">
                     <Oval
