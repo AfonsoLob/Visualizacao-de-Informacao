@@ -7,15 +7,24 @@ const ApprovedPercentagePerYear = () => {
   const [data, setData] = useState([]);
   const { filters } = useFilters();
   const selectedSubject = filters.Disciplina?.value;
+  const yearRange = filters.years;
   
   
   useEffect(() => {
     const processChartData = async () => {
       try {
         const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv");
-        const filteredData = rawData.filter((d) => d.idisciplinaid === selectedSubject);
+        const filteredData = rawData.filter((d) => {
+          const year = parseInt(d.ianolectivo);
+          return (
+            d.idisciplinaid === selectedSubject &&
+            year >= yearRange[0] &&
+            year <= yearRange[1]
+          );
+        });
   
         const yearData = d3.group(filteredData, d => d.ianolectivo);
+
         const formattedData = Array.from(yearData, ([year, records]) => {
           const total = records.length;
           const approved = records.filter(d => d.aprovado === "1").length;
@@ -34,19 +43,19 @@ const ApprovedPercentagePerYear = () => {
     if (selectedSubject) {
       processChartData();
     }
-  }, [selectedSubject]); 
+  }, [selectedSubject, yearRange]); 
 
 
-  useEffect(() => {
-    const logSubjectChange = () => {
-      console.group('Subject Selection Update');
-      console.log('Current Subject:', selectedSubject);
-      console.log('Time:', new Date().toLocaleTimeString());
-      console.groupEnd();
-    };
+  // useEffect(() => {
+  //   const logSubjectChange = () => {
+  //     console.group('Subject Selection Update');
+  //     console.log('Current Subject:', selectedSubject);
+  //     console.log('Time:', new Date().toLocaleTimeString());
+  //     console.groupEnd();
+  //   };
   
-    logSubjectChange();
-  }, [selectedSubject]);
+  //   logSubjectChange();
+  // }, [selectedSubject]);
 
 return (
   <>

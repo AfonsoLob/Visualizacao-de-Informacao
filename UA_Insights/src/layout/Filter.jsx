@@ -16,7 +16,7 @@ export const Filter = () => {
   const maxYear = 2022;
 
   // const [selectedOption, setSelectedOption] = useState("");
-  // const location = useLocation();
+  // const location = useLocation();  
   // const csvFile = "/notas-alunos-2012-2022-corrigido.csv";
 
   
@@ -62,6 +62,7 @@ export const Filter = () => {
   }));
   const handleYearRangeChange = (_, newValue) => {
     setYearRange(newValue);
+    updateFilter('years', newValue);
   };
   // End custom 
 
