@@ -9,7 +9,7 @@ const Base = ({ children }) => {
       <CourseProvider>
         <div className="flex min-h-screen">
           <Filter />
-          <div className="flex-1 p-4">
+          <div className="flex-1 p-[0.8rem] flex flex-col">
             <Navbar />
             {children}
           </div>

@@ -13,7 +13,7 @@ const Cadeira = () => {
     return (
       <>
       {!selectedSubject ? ( 
-        <div className="flex items-center justify-center h-full">
+        <div className="flex items-center justify-center">
           <h2 className="text-gray-500 font-bold">Selecione uma disciplina para visualizar os dados!</h2>
         </div>
       ) : (

@@ -13,7 +13,7 @@ const Curso = () => {
     return (
       <>
       {!selectedCurso ? ( 
-        <div className="flex items-center justify-center h-full">
+        <div className="flex items-center justify-center">
           <h2 className="text-gray-500 font-bold">Selecione um curso para visualizar os dados!</h2>
         </div>
       ) : (
