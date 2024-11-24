@@ -162,4 +162,4 @@ cython_debug/
 #.idea/
 
 #ignore csv files
-*.csv
+notas-alunos-2012-2022-corrigido.csv
