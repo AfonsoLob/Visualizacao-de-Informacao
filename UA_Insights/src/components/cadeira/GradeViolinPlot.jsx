@@ -161,19 +161,19 @@ const GradeViolinPlot = () => {
     const formatTooltip = (d) => {
       return `
         <div class="text-sm">
-          <strong>Year: ${d.year}</strong><br/>
-          <strong>Statistics:</strong><br/>
-          • Students: ${d.count}<br/>
-          • Mean: ${d.mean}<br/>
-          • Median: ${d.median}<br/>
+          <strong>Ano : ${d.year}</strong><br/>
+          <strong>Estatísticas:</strong><br/>
+          • Estudantes: ${d.count}<br/>
+          • Média: ${d.mean}<br/>
+          • Mediana: ${d.median}<br/>
           • Q1: ${d.q1} | Q3: ${d.q3}<br/>
-          • Min: ${d.min} | Max: ${d.max}<br/>
+          • Mínimo: ${d.min} | Máximo: ${d.max}<br/>
           <br/>
-          <strong>Grade Distribution:</strong><br/>
-          • Excellent (≥16): ${d.distributions.excellent.toFixed(1)}%<br/>
-          • Good (14-15): ${d.distributions.good.toFixed(1)}%<br/>
-          • Average (10-13): ${d.distributions.average.toFixed(1)}%<br/>
-          • Fail (<10): ${d.distributions.fail.toFixed(1)}%
+          <strong>Distribuição de Notas:</strong><br/>
+          • Excelente (≥16): ${d.distributions.excellent.toFixed(1)}%<br/>
+          • Bom (14-15): ${d.distributions.good.toFixed(1)}%<br/>
+          • Suficiente (10-13): ${d.distributions.average.toFixed(1)}%<br/>
+          • Fraco (<10): ${d.distributions.fail.toFixed(1)}%
         </div>
       `;
     };
