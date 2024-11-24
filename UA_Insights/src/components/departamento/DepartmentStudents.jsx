@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Legend } from "recharts";
 import { useFilters } from "../../context/FilterContext";
 import { useCourseMapping } from "../../context/courseContext";
@@ -7,56 +7,57 @@ import * as d3 from "d3";
 
 const DepartmentStudents = () => {
   const { rawData, loading: dataLoading } = useData();
-  const [licenciaturaData, setLicenciaturaData] = useState([]);
-  const [mestradoData, setMestradoData] = useState([]);
-  const [integradoData, setIntegradoData] = useState([]);
-  const [activeChart, setActiveChart] = useState("Licenciaturas"); // Controls which chart is shown
+  const [activeChart, setActiveChart] = useState("Licenciaturas");
   const { filters } = useFilters();
   const selectedDepartment = filters.Departamento?.value;
+  const yearRange = filters.years;
   const courseMapping = useCourseMapping();
 
-  useEffect(() => {
-    if (!selectedDepartment || dataLoading) return;
-
-    const fetchData = async () => {
-      try {
-        // Filter by selected department
-        const departmentData = rawData.filter((d) => d.dep_sigla_oficial === selectedDepartment);
-
-        // Separate courses by "sigla_grau"
-        const licenciaturaCourses = departmentData.filter((d) => d.sigla_grau === "L1");
-        const mestradoCourses = departmentData.filter((d) => d.sigla_grau === "M2");
-        const mestradoIntegrado = departmentData.filter((d) => d.sigla_grau === "MI");
-
-        // Process data for stacked bar chart
-        const groupByYear = (data) => {
-          const groupedByYear = d3.group(data, (d) => d.ianolectivo);
-          return Array.from(groupedByYear, ([year, records]) => {
-            const courseCounts = d3.rollup(
-              records,
-              (v) => new Set(v.map((d) => d.id_estudante)).size,
-              (d) => d.icursocod
-            );
-
-            return {
-              year,
-              ...Object.fromEntries(courseCounts),
-            };
-          });
-        };
-
-        setLicenciaturaData(groupByYear(licenciaturaCourses));
-        setMestradoData(groupByYear(mestradoCourses));
-        setIntegradoData(groupByYear(mestradoIntegrado));
-      } catch (error) {
-        console.error("Error loading data:", error);
-      }
+  const processedData = useMemo(() => {
+    if (!selectedDepartment || dataLoading) return {
+      licenciaturaData: [],
+      mestradoData: [],
+      integradoData: []
     };
 
-    if (selectedDepartment) {
-      fetchData();
-    }
-  }, [rawData, dataLoading, selectedDepartment]);
+    // Filter by selected department and year range
+    const departmentData = rawData.filter((d) => 
+      d.dep_sigla_oficial === selectedDepartment &&
+      parseInt(d.ianolectivo) >= yearRange[0] &&
+      parseInt(d.ianolectivo) <= yearRange[1]
+    );
+
+    // Separate courses by "sigla_grau"
+    const licenciaturaCourses = departmentData.filter((d) => d.sigla_grau === "L1");
+    const mestradoCourses = departmentData.filter((d) => d.sigla_grau === "M2");
+    const mestradoIntegrado = departmentData.filter((d) => d.sigla_grau === "MI");
+
+    // Process data for each type
+    const groupByYear = (data) => {
+      const groupedByYear = d3.group(data, (d) => d.ianolectivo);
+      return Array.from(groupedByYear, ([year, records]) => {
+        const courseCounts = d3.rollup(
+          records,
+          (v) => new Set(v.map((d) => d.id_estudante)).size,
+          (d) => d.icursocod
+        );
+
+        return {
+          year,
+          ...Object.fromEntries(courseCounts),
+          total: new Set(records.map((d) => d.id_estudante)).size,
+        };
+      }).sort((a, b) => a.year - b.year);
+    };
+
+    return {
+      licenciaturaData: groupByYear(licenciaturaCourses),
+      mestradoData: groupByYear(mestradoCourses),
+      integradoData: groupByYear(mestradoIntegrado)
+    };
+  }, [selectedDepartment, rawData, dataLoading, yearRange]);
+
+  const { licenciaturaData, mestradoData, integradoData } = processedData;
 
   return (
     <div style={{ width: "100%", height: 400 }}>

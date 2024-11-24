@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, Legend, ResponsiveContainer } from "recharts";
 import * as d3 from "d3";
 import { useFilters } from "../../context/FilterContext";
@@ -6,39 +6,43 @@ import { useData } from "../../context/DataContext";
 
 const DepartmentAverageGrade = () => {
   const { rawData, loading: dataLoading } = useData();
-  const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
   const { filters } = useFilters();
   const selectedDepartment = filters.Departamento?.value;
+  const yearRange = filters.years;
 
+  // Fetch department data
   useEffect(() => {
     if (!selectedDepartment || dataLoading) return;
+    const deptData = rawData.filter((d) => d.dep_sigla_oficial === selectedDepartment);
+    setFilteredData(deptData);
+  }, [selectedDepartment, rawData, dataLoading]);
 
-    const fetchData = async () => {
-      try {
-        // Filter data by selected department
-        const filteredData = rawData.filter((d) => d.dep_sigla_oficial === selectedDepartment);
+  // Process data with year range using useMemo
+  const data = useMemo(() => {
+    if (!filteredData.length) return [];
 
-        // Group by year and calculate average grade
-        const groupedData = d3.group(filteredData, (d) => d.ianolectivo);
-        const processedData = Array.from(groupedData, ([year, records]) => {
-          const grades = records
-            .filter((record) => record.avaliado === "1")
-            .map((record) => +record.nota);
-          const averageGrade = grades.length ? d3.mean(grades) : null;
-          return { year, averageGrade: averageGrade?.toFixed(2) }; // Fix to 2 decimal places
-        }).filter((d) => d.averageGrade !== null); // Remove years with no grades
+    // Filter by year range
+    const yearFilteredData = filteredData.filter(d => {
+      const year = parseInt(d.ianolectivo);
+      return year >= yearRange[0] && year <= yearRange[1];
+    });
 
-        console.log("Recharts Data:", processedData);
-        setData(processedData);
-      } catch (error) {
-        console.error("Error loading data:", error);
-      }
-    };
-
-    if (selectedDepartment) {
-      fetchData();
-    }
-  }, [rawData, dataLoading, selectedDepartment]);
+    // Group by year and calculate average grade
+    const groupedData = d3.group(yearFilteredData, (d) => d.ianolectivo);
+    return Array.from(groupedData, ([year, records]) => {
+      const grades = records
+        .filter((record) => record.avaliado === "1")
+        .map((record) => +record.nota);
+      const averageGrade = grades.length ? d3.mean(grades) : null;
+      return { 
+        year, 
+        averageGrade: averageGrade?.toFixed(2) 
+      };
+    })
+    .filter((d) => d.averageGrade !== null)
+    .sort((a, b) => a.year - b.year);
+  }, [filteredData, yearRange]);
 
 const [strokeWidth, setStrokeWidth] = useState(2);
 const [dotSize, setDotSize] = useState(5);
