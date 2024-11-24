@@ -6,6 +6,22 @@ import { useFilters } from '../context/FilterContext';
 import * as d3 from "d3";
 import Select from 'react-select'; // Util porque deixa dar seach e escolher varias cadeiras ao mesmo tempo (se for preciso)
 
+const parseCSV = (text) => {
+  const lines = text.split('\n');
+  const headers = lines[0].split(',');
+  const result = {};
+  
+  for (let i = 1; i < lines.length; i++) {
+    const currentLine = lines[i].split(',');
+    if (currentLine.length === headers.length) {
+      const codigo = currentLine[0].trim();
+      const nome = currentLine[1].trim();
+      result[codigo] = nome;
+    }
+  }
+  return result;
+};
+
 export const Filter = () => {
 
   const { filters, updateFilter } = useFilters();
@@ -14,6 +30,18 @@ export const Filter = () => {
   const [dynamicOptions, setDynamicOptions] = useState([]); // Holds dynamic options for the current filter
   const minYear = 2012;
   const maxYear = 2022;
+  const csvCodigoNome = "/cursocod-nome-grau.csv";
+  const [courseMapping, setCourseMapping] = useState({});
+
+  useEffect(() => {
+    fetch(csvCodigoNome)
+      .then(response => response.text())
+      .then(data => {
+        const mapping = parseCSV(data);
+        setCourseMapping(mapping);
+      })
+      .catch(error => console.error('Error loading CSV:', error));
+  }, [csvCodigoNome]);
 
   // const [selectedOption, setSelectedOption] = useState("");
   // const location = useLocation();  
@@ -98,8 +126,10 @@ export const Filter = () => {
             styles={customStyles}
             options={filter.isDynamic ? 
               (filter.label === "Departamento" ? 
-                (dynamicOptions[filter.field] || []).map(opt => ({ ...opt, label: opt.label.toUpperCase() })) : 
-                dynamicOptions[filter.field] || []) : 
+          (dynamicOptions[filter.field] || []).map(opt => ({ ...opt, label: opt.label.toUpperCase() })) : 
+          filter.label === "Curso" ? 
+            (dynamicOptions[filter.field] || []).map(opt => ({ ...opt, label: courseMapping[opt.value] || opt.label })) : 
+            dynamicOptions[filter.field] || []) : 
               filter.options.map(opt => ({ value: opt, label: filter.label === "Departamento" ? opt.toUpperCase() : opt }))}
             onChange={(value) => updateFilter(filter.label, value)}
             value={filters[filter.field]}
