@@ -1,5 +1,6 @@
 import { useFilters } from "../context/FilterContext";
 import DepartmentAverageGrade from "../components/departamento/DepartmentAverageGrade";
+import DepartmentStudents from "../components/departamento/DepartmentStudents";
 
 const Curso = () => {
   
@@ -18,7 +19,7 @@ const Curso = () => {
             <DepartmentAverageGrade/>
         </div>
         <div className="w-full h-[400px] border border-lightgray rounded-lg p-1.5 bg-[#f9f9f9] flex flex-col items-center justify-center text-white" style={{ backgroundColor: '#2d3748' }}>
-            <h2>TO DO</h2>
+            <DepartmentStudents/>
         </div>
         <div className="w-full h-[400px] border border-lightgray rounded-lg p-1.5 bg-[#f9f9f9] flex flex-col items-center justify-center text-white" style={{ backgroundColor: '#2d3748' }}>
             <h2>TO DO</h2>
