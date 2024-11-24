@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Legend } from "recharts";
 import { useFilters } from "../../context/FilterContext";
 import { useCourseMapping } from "../../context/courseContext";
+import { useData } from "../../context/DataContext";
 import * as d3 from "d3";
 
 const DepartmentStudents = () => {
+  const { rawData, loading: dataLoading } = useData();
   const [licenciaturaData, setLicenciaturaData] = useState([]);
   const [mestradoData, setMestradoData] = useState([]);
   const [integradoData, setIntegradoData] = useState([]);
@@ -14,10 +16,10 @@ const DepartmentStudents = () => {
   const courseMapping = useCourseMapping();
 
   useEffect(() => {
+    if (!selectedDepartment || dataLoading) return;
+
     const fetchData = async () => {
       try {
-        const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv");
-
         // Filter by selected department
         const departmentData = rawData.filter((d) => d.dep_sigla_oficial === selectedDepartment);
 
@@ -54,7 +56,7 @@ const DepartmentStudents = () => {
     if (selectedDepartment) {
       fetchData();
     }
-  }, [selectedDepartment]);
+  }, [rawData, dataLoading, selectedDepartment]);
 
   return (
     <div style={{ width: "100%", height: 400 }}>

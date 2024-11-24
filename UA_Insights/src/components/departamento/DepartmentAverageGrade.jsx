@@ -2,17 +2,19 @@ import React, { useEffect, useState } from "react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, Legend, ResponsiveContainer } from "recharts";
 import * as d3 from "d3";
 import { useFilters } from "../../context/FilterContext";
+import { useData } from "../../context/DataContext";
 
 const DepartmentAverageGrade = () => {
+  const { rawData, loading: dataLoading } = useData();
   const [data, setData] = useState([]);
   const { filters } = useFilters();
   const selectedDepartment = filters.Departamento?.value;
 
   useEffect(() => {
+    if (!selectedDepartment || dataLoading) return;
+
     const fetchData = async () => {
       try {
-        const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv");
-
         // Filter data by selected department
         const filteredData = rawData.filter((d) => d.dep_sigla_oficial === selectedDepartment);
 
@@ -36,7 +38,7 @@ const DepartmentAverageGrade = () => {
     if (selectedDepartment) {
       fetchData();
     }
-  }, [selectedDepartment]);
+  }, [rawData, dataLoading, selectedDepartment]);
 
 const [strokeWidth, setStrokeWidth] = useState(2);
 const [dotSize, setDotSize] = useState(5);
