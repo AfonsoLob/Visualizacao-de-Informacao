@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import * as d3 from "d3";
+import { useData } from "../../context/DataContext";
 
 const ApprovalPerYearChart = () => {
   const [data, setData] = useState([]);
+  const {rawData, loading: dataLoading} = useData();
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        // Load the CSV data
-        const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv"); // Replace with your CSV path
-
         // Process the data: Group by 'ianolectivo' and calculate the approval percentage
         const approvalData = d3.group(rawData, (d) => +d.ianolectivo); // Ensure year is numeric
         const approvalPercentage = Array.from(approvalData, ([year, records]) => {
