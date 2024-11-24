@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Legend } from "recharts";
-import * as d3 from "d3";
 import { useFilters } from "../../context/FilterContext";
+import * as d3 from "d3";
 
 const DepartmentStudents = () => {
-  const [data, setData] = useState([]);
+  const [licenciaturaData, setLicenciaturaData] = useState([]);
+  const [mestradoData, setMestradoData] = useState([]);
+  const [integradoData, setIntegradoData] = useState([]);
+  const [activeChart, setActiveChart] = useState("Licenciaturas"); // Controls which chart is shown
   const { filters } = useFilters();
   const selectedDepartment = filters.Departamento?.value;
 
@@ -13,65 +16,171 @@ const DepartmentStudents = () => {
       try {
         const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv");
 
-        // Filter data by selected department
-        const filteredData = rawData.filter((d) => d.dep_sigla_oficial === selectedDepartment);
+        // Filter by selected department
+        const departmentData = rawData.filter((d) => d.dep_sigla_oficial === selectedDepartment);
 
-        // Group data by year and course, counting students
-        const groupedData = d3.group(filteredData, (d) => d.ianolectivo);
-        const processedData = Array.from(groupedData, ([year, records]) => {
-          const courseCounts = d3.rollup(
-            records,
-            (v) => new Set(v.map(d => d.id_estudante)).size, // Count students
-            (d) => d.icursocod // Group by course
-          );
+        // Separate courses by "sigla_grau"
+        const licenciaturaCourses = departmentData.filter((d) => d.sigla_grau === "L1");
+        const mestradoCourses = departmentData.filter((d) => d.sigla_grau === "M2");
+        const mestradoIntegrado = departmentData.filter((d) => d.sigla_grau === "MI");
 
-          // Transform course counts into a single object with dynamic keys
-          const courseData = Array.from(courseCounts).reduce(
-            (acc, [course, count]) => ({ ...acc, [course]: count }),
-            {}
-          );
+        // Process data for stacked bar chart
+        const groupByYear = (data) => {
+          const groupedByYear = d3.group(data, (d) => d.ianolectivo);
+          return Array.from(groupedByYear, ([year, records]) => {
+            const courseCounts = d3.rollup(
+              records,
+              (v) => new Set(v.map((d) => d.id_estudante)).size,
+              (d) => d.icursocod
+            );
 
-          return { year, ...courseData }; // Include year and course counts
-        });
+            return {
+              year,
+              ...Object.fromEntries(courseCounts),
+            };
+          });
+        };
 
-        setData(processedData);
-    } catch (error) {
+        setLicenciaturaData(groupByYear(licenciaturaCourses));
+        setMestradoData(groupByYear(mestradoCourses));
+        setIntegradoData(groupByYear(mestradoIntegrado));
+      } catch (error) {
         console.error("Error loading data:", error);
-    }
+      }
     };
-    
+
     if (selectedDepartment) {
-        fetchData();
+      fetchData();
     }
   }, [selectedDepartment]);
 
-return (
+  return (
     <div style={{ width: "100%", height: 400 }}>
-        <h2>Número de Alunos por Curso no Departamento</h2>
-        <ResponsiveContainer>
-            <BarChart
-                data={data}
-                margin={{ top: 20, right: 30, left: 20, bottom: 30 }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="year" stroke="#ffffff" />
-                <YAxis stroke="#ffffff" />
-                <Tooltip contentStyle={{ backgroundColor: "#2d3448", color: "#fff" }} />
-                <Legend />
-                {Array.from(new Set(data.flatMap(Object.keys)))
-                    .filter((key) => key !== "year") // Exclude "year" from keys
-                    .map((course, index) => (
-                        <Bar
-                            key={course}
-                            dataKey={course}
-                            stackId="1"
-                            fill={`hsl(${index * 40}, 70%, 50%)`} // Assign dynamic colors
-                        />
-                    ))}
-            </BarChart>
+      <h2>Número de Alunos no Departamento</h2>
+
+      {/* Buttons for toggling */}
+      <div style={{ marginBottom: "20px", display: "flex", justifyContent: "center" }}>
+        <button
+          onClick={() => setActiveChart("Licenciaturas")}
+          style={{
+            padding: "5px 10px",
+            margin: "0 10px",
+            backgroundColor: activeChart === "Licenciaturas" ? "#4CAF50" : "#ccc",
+            color: "#fff",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+          }}
+        >
+          Licenciaturas
+        </button>
+        <button
+          onClick={() => setActiveChart("Mestrados")}
+          style={{
+            padding: "5px 10px",
+            margin: "0 10px",
+            backgroundColor: activeChart === "Mestrados" ? "#4CAF50" : "#ccc",
+            color: "#fff",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+          }}
+        >
+          Mestrados
+        </button>
+        <button
+          onClick={() => setActiveChart("Integrados")}
+          style={{
+            padding: "5px 10px",
+            margin: "0 10px",
+            backgroundColor: activeChart === "Integrados" ? "#4CAF50" : "#ccc",
+            color: "#fff",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+          }}
+        >
+          M. Integrados
+        </button>
+      </div>
+
+      {/* Conditionally render the active chart */}
+      {activeChart === "Licenciaturas" && (
+        <ResponsiveContainer width="100%" height={350}>
+          <BarChart
+            data={licenciaturaData}
+            margin={{ top: 10, right: 30, left: 0, bottom: 40 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="year" stroke="#ffffff" />
+            <YAxis stroke="#ffffff" />
+            <Tooltip contentStyle={{ backgroundColor: "#2d3448", color: "#fff" }} />
+            <Legend />
+            {Array.from(new Set(licenciaturaData.flatMap(Object.keys)))
+              .filter((key) => key !== "year")
+              .map((course, index) => (
+                <Bar
+                  key={course}
+                  dataKey={course}
+                  stackId="1"
+                  fill={`hsl(${index * 40}, 70%, 50%)`}
+                />
+              ))}
+          </BarChart>
         </ResponsiveContainer>
+      )}
+
+      {activeChart === "Mestrados" && (
+        <ResponsiveContainer width="100%" height={350}>
+          <BarChart
+            data={mestradoData}
+            margin={{ top: 10, right: 30, left: 0, bottom: 40 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="year" stroke="#ffffff" />
+            <YAxis stroke="#ffffff" />
+            <Tooltip contentStyle={{ backgroundColor: "#2d3448", color: "#fff" }} />
+            <Legend />
+            {Array.from(new Set(mestradoData.flatMap(Object.keys)))
+              .filter((key) => key !== "year")
+              .map((course, index) => (
+                <Bar
+                  key={course}
+                  dataKey={course}
+                  stackId="1"
+                  fill={`hsl(${index * 40}, 70%, 50%)`}
+                />
+              ))}
+          </BarChart>
+        </ResponsiveContainer>
+      )}
+
+      {activeChart === "Integrados" && (
+        <ResponsiveContainer width="100%" height={350}>
+          <BarChart
+            data={integradoData}
+            margin={{ top: 10, right: 30, left: 0, bottom: 40 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="year" stroke="#ffffff" />
+            <YAxis stroke="#ffffff" />
+            <Tooltip contentStyle={{ backgroundColor: "#2d3448", color: "#fff" }} />
+            <Legend />
+            {Array.from(new Set(integradoData.flatMap(Object.keys)))
+              .filter((key) => key !== "year")
+              .map((course, index) => (
+                <Bar
+                  key={course}
+                  dataKey={course}
+                  stackId="1"
+                  fill={`hsl(${index * 40}, 70%, 50%)`}
+                />
+              ))}
+          </BarChart>
+        </ResponsiveContainer>
+      )}
     </div>
-);
+  );
 };
 
 export default DepartmentStudents;
