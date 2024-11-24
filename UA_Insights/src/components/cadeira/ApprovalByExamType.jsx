@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useFilters } from "../../context/FilterContext";
-import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
+import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import * as d3 from "d3";
 
 const CourseApprovalsByExamType = () => {
@@ -51,25 +51,27 @@ const CourseApprovalsByExamType = () => {
         </div>
       ) : (
         <div>
-          <h3>Percentagem de Aprovados por Tipo de Exame</h3>
+          <h3 className="w-full">Percentagem de Aprovados por Tipo de Exame</h3>
 
-          <PieChart width={600} height={300}>
-            <Pie
-              data={data}
-              cx="50%"
-              cy="50%"
-              label={(entry) => `${entry.name}: ${entry.value}`}
-              outerRadius={120}
-              fill="#8884d8"
-              dataKey="value"
-            >
-              {data.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-              ))}
-            </Pie>
-            <Tooltip />
-            <Legend />
-          </PieChart>
+          <ResponsiveContainer width="100%" height={300}>
+            <PieChart>
+              <Pie
+                data={data}
+                cx="50%"
+                cy="50%"
+                label={(entry) => `${entry.name}: ${entry.value}`}
+                outerRadius={120}
+                fill="#8884d8"
+                dataKey="value"
+              >
+                {data.map((entry, index) => (
+                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                ))}
+              </Pie>
+              <Tooltip />
+              <Legend />
+            </PieChart>
+          </ResponsiveContainer>
         </div>
       )}
     </>
