@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import ErasmusApprovalPercentage from "../components/curso/ErasmusApprovalPercentage"; 
 import AverageGrade from "../components/curso/AverageGrade";
 import { useFilters } from "../context/FilterContext";
+// import CompletionYearsDistribution from "../components/curso/CompletionsYearsDistribution";
 
 
 const Curso = () => {
@@ -25,6 +26,7 @@ const Curso = () => {
         </div>
         <div className="w-full h-[400px] border border-lightgray rounded-lg p-1.5 bg-[#f9f9f9] flex flex-col items-center justify-center text-white" style={{ backgroundColor: '#2d3748' }}>
             <h2>TO DO</h2>
+            {/* <CompletionYearsDistribution/> */}
         </div>
         <div className="w-full h-[400px] border border-lightgray rounded-lg p-1.5 bg-[#f9f9f9] flex flex-col items-center justify-center text-white" style={{ backgroundColor: '#2d3748' }}>
           <h2>TO DO</h2>

@@ -68,7 +68,7 @@ const CompletionYearsDistribution = () => {
         </div>
       ) : (
         <div>
-          <h2>Distribuição de Anos para Completar o Curso</h2>
+          <h2 className="mb-4 text-xl font-semibold">Distribuição de Anos para Completar o Curso</h2>
           <BarChart
             width={700}
             height={250}
