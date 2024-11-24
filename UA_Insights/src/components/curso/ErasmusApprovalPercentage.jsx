@@ -12,9 +12,6 @@ const ErasmusApprovalPercentage = () => {
     const yearRange = filters.years;
     const [loading, setLoading] = useState(false);
 
-
-    
-
     useEffect(() => {
         const processChartData = async () => {
             setLoading(true);

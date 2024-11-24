@@ -22,7 +22,9 @@ const Cadeira = () => {
             <ApprovedPercentagePerYear/>
         </div>
         <div className="w-full h-[400px] border border-lightgray rounded-lg p-1.5 bg-[#f9f9f9] flex flex-col items-center justify-center text-white" style={{ backgroundColor: '#2d3748' }}>
-          <CourseApprovalsByExamType/>
+          {/* <CourseApprovalsByExamType/> */}
+          <h2>Something</h2>
+
         </div>
         <div className="w-full h-[400px] border border-lightgray rounded-lg p-1.5 bg-[#f9f9f9] flex flex-col items-center justify-center text-white" style={{ backgroundColor: '#2d3748' }}>
             <GradeViolinPlot/> 

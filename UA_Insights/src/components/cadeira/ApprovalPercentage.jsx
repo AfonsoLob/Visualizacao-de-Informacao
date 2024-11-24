@@ -1,74 +1,90 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import * as d3 from "d3";
 import { useFilters } from "../../context/FilterContext";
+import { Oval } from 'react-loader-spinner';
 
 const ApprovedPercentagePerYear = () => {
-  const [data, setData] = useState([]);
+  const [rawSubjectData, setRawSubjectData] = useState([]);
   const { filters } = useFilters();
   const selectedSubject = filters.Disciplina?.value;
   const yearRange = filters.years;
+  const [loading, setLoading] = useState(false);
+
   
-  
+  // Fetch and process data only when subject changes
   useEffect(() => {
-    const processChartData = async () => {
+    const fetchSubjectData = async () => {
+      setLoading(true);
       try {
         const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv");
-        const filteredData = rawData.filter((d) => {
-          const year = parseInt(d.ianolectivo);
-          return (
-            d.idisciplinaid === selectedSubject &&
-            year >= yearRange[0] &&
-            year <= yearRange[1]
-          );
-        });
-  
-        const yearData = d3.group(filteredData, d => d.ianolectivo);
-
-        const formattedData = Array.from(yearData, ([year, records]) => {
-          const total = records.length;
-          const approved = records.filter(d => d.aprovado === "1").length;
-          return {
-            year,
-            percentage: ((approved / total) * 100).toFixed(2)
-          };
-        }).sort((a, b) => a.year - b.year);
-  
-        setData(formattedData);
+        const subjectData = rawData.filter((d) => 
+          d.idisciplinaid === selectedSubject
+        );
+        setRawSubjectData(subjectData);
       } catch (error) {
         console.error("Error processing data:", error);
+      } finally {
+        setLoading(false);
       }
     };
-  
+
     if (selectedSubject) {
-      processChartData();
+      fetchSubjectData();
     }
-  }, [selectedSubject, yearRange]); 
+  }, [selectedSubject]); // Only re-run when subject changes
 
+  // Process data based on year range using useMemo
+  const displayData = useMemo(() => {
+    if (!rawSubjectData.length) return [];
 
-  // useEffect(() => {
-  //   const logSubjectChange = () => {
-  //     console.group('Subject Selection Update');
-  //     console.log('Current Subject:', selectedSubject);
-  //     console.log('Time:', new Date().toLocaleTimeString());
-  //     console.groupEnd();
-  //   };
-  
-  //   logSubjectChange();
-  // }, [selectedSubject]);
+    // Group and filter data by year
+    const yearData = d3.group(
+      rawSubjectData.filter(d => {
+        const year = parseInt(d.ianolectivo);
+        return year >= yearRange[0] && year <= yearRange[1];
+      }), 
+      d => d.ianolectivo
+    );
+
+    // Calculate percentages
+    return Array.from(yearData, ([year, records]) => {
+      const total = records.length;
+      const approved = records.filter(d => d.aprovado === "1").length;
+      return {
+        year,
+        percentage: ((approved / total) * 100).toFixed(2)
+      };
+    }).sort((a, b) => a.year - b.year);
+  }, [rawSubjectData, yearRange]); // Recalculate only when raw data or year range changes
+
 
 return (
   <>
-      {!selectedSubject ? (
-        <div>
-          <h2 className="text-gray-500 font-bold">Selecione uma disciplina para visualizar os dados!</h2>
-        </div>
+      {loading ? (
+                <div className="flex flex-col items-center w-full h-full p-2">
+                <div className="flex-1 w-full flex items-center justify-center">
+                    <Oval
+                        height={80}
+                        width={80}
+                        color="#4fa94d"
+                        wrapperStyle={{}}
+                        wrapperClass=""
+                        visible={true}
+                        ariaLabel='oval-loading'
+                        secondaryColor="#4fa94d"
+                        strokeWidth={2}
+                        strokeWidthSecondary={2}
+
+                    />
+                </div>
+                </div>
       ) : (
         <div className="w-full">
           <h2>Percentagem de Aprovados por Ano</h2>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart
-              data={data}
+              data={displayData}
               margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
             >
               <CartesianGrid strokeDasharray="3 3" />
