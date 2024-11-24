@@ -16,7 +16,8 @@ const parseCSV = (text) => {
     if (currentLine.length === headers.length) {
       const codigo = currentLine[0].trim();
       const nome = currentLine[1].trim();
-      result[codigo] = nome;
+      const grau = currentLine[2].trim();
+      result[codigo] = { nome, grau };
     }
   }
   return result;
@@ -128,7 +129,11 @@ export const Filter = () => {
               (filter.label === "Departamento" ? 
           (dynamicOptions[filter.field] || []).map(opt => ({ ...opt, label: opt.label.toUpperCase() })) : 
           filter.label === "Curso" ? 
-            (dynamicOptions[filter.field] || []).map(opt => ({ ...opt, label: courseMapping[opt.value] || opt.label })) : 
+            (dynamicOptions[filter.field] || []).map(opt => {
+              const course = courseMapping[opt.value];
+              const grauInitial = course ? `(${course.grau.charAt(0)}) ` : '';
+              return { ...opt, label: `${grauInitial}${course ? course.nome : opt.label}` };
+            }) : 
             dynamicOptions[filter.field] || []) : 
               filter.options.map(opt => ({ value: opt, label: filter.label === "Departamento" ? opt.toUpperCase() : opt }))}
             onChange={(value) => updateFilter(filter.label, value)}
