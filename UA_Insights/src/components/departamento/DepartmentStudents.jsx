@@ -3,6 +3,23 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContaine
 import { useFilters } from "../../context/FilterContext";
 import * as d3 from "d3";
 
+const parseCSV = (text) => {
+  const lines = text.split('\n');
+  const headers = lines[0].split(',');
+  const result = {};
+  
+  for (let i = 1; i < lines.length; i++) {
+    const currentLine = lines[i].split(',');
+    if (currentLine.length === headers.length) {
+      const codigo = currentLine[0].trim();
+      const nome = currentLine[1].trim();
+      const grau = currentLine[2].trim();
+      result[codigo] = { nome, grau };
+    }
+  }
+  return result;
+};
+
 const DepartmentStudents = () => {
   const [licenciaturaData, setLicenciaturaData] = useState([]);
   const [mestradoData, setMestradoData] = useState([]);
@@ -10,6 +27,18 @@ const DepartmentStudents = () => {
   const [activeChart, setActiveChart] = useState("Licenciaturas"); // Controls which chart is shown
   const { filters } = useFilters();
   const selectedDepartment = filters.Departamento?.value;
+  const csvCodigoNome = "/cursocod-nome-grau.csv";
+  const [courseMapping, setCourseMapping] = useState({});
+
+  useEffect(() => {
+    fetch(csvCodigoNome)
+      .then(response => response.text())
+      .then(data => {
+        const mapping = parseCSV(data);
+        setCourseMapping(mapping);
+      })
+      .catch(error => console.error('Error loading CSV:', error));
+  }, [csvCodigoNome]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -118,14 +147,23 @@ const DepartmentStudents = () => {
             <Legend />
             {Array.from(new Set(licenciaturaData.flatMap(Object.keys)))
               .filter((key) => key !== "year")
-              .map((course, index) => (
-                <Bar
-                  key={course}
-                  dataKey={course}
-                  stackId="1"
-                  fill={`hsl(${index * 40}, 70%, 50%)`}
-                />
-              ))}
+              .map((course, index) => {
+                const courseDetails = courseMapping[course];
+                const words = courseDetails ? courseDetails.nome.split(' ') : [];
+                const label = words.length > 1
+                  ? words.map(word => word.length > 3 ? word.charAt(0) : '').join('')
+                  : courseDetails ? courseDetails.nome : course;
+
+                return (
+                  <Bar
+                    key={course}
+                    dataKey={course}
+                    name={label} // Custom label for the legend
+                    stackId="1"
+                    fill={`hsl(${index * 40}, 70%, 50%)`}
+                  />
+                );
+              })}
           </BarChart>
         </ResponsiveContainer>
       )}
@@ -143,14 +181,23 @@ const DepartmentStudents = () => {
             <Legend />
             {Array.from(new Set(mestradoData.flatMap(Object.keys)))
               .filter((key) => key !== "year")
-              .map((course, index) => (
-                <Bar
-                  key={course}
-                  dataKey={course}
-                  stackId="1"
-                  fill={`hsl(${index * 40}, 70%, 50%)`}
-                />
-              ))}
+              .map((course, index) => {
+                const courseDetails = courseMapping[course];
+                const words = courseDetails ? courseDetails.nome.split(' ') : [];
+                const label = words.length > 1
+                  ? words.map(word => word.length > 3 ? word.charAt(0) : '').join('')
+                  : courseDetails ? courseDetails.nome : course;
+
+                return (
+                  <Bar
+                    key={course}
+                    dataKey={course}
+                    name={label} // Custom label for the legend
+                    stackId="1"
+                    fill={`hsl(${index * 40}, 70%, 50%)`}
+                  />
+                );
+              })}
           </BarChart>
         </ResponsiveContainer>
       )}
@@ -168,14 +215,23 @@ const DepartmentStudents = () => {
             <Legend />
             {Array.from(new Set(integradoData.flatMap(Object.keys)))
               .filter((key) => key !== "year")
-              .map((course, index) => (
-                <Bar
-                  key={course}
-                  dataKey={course}
-                  stackId="1"
-                  fill={`hsl(${index * 40}, 70%, 50%)`}
-                />
-              ))}
+              .map((course, index) => {
+                const courseDetails = courseMapping[course];
+                const words = courseDetails ? courseDetails.nome.split(' ') : [];
+                const label = words.length > 1
+                  ? words.map(word => word.length > 3 ? word.charAt(0) : '').join('')
+                  : courseDetails ? courseDetails.nome : course;
+
+                return (
+                  <Bar
+                    key={course}
+                    dataKey={course}
+                    name={label} // Custom label for the legend
+                    stackId="1"
+                    fill={`hsl(${index * 40}, 70%, 50%)`}
+                  />
+                );
+              })}
           </BarChart>
         </ResponsiveContainer>
       )}
