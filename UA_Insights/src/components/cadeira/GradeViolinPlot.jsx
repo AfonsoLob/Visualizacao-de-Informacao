@@ -1,17 +1,18 @@
 import React, { useEffect, useRef, useState, useMemo } from "react";
 import * as d3 from "d3";
 import { useFilters } from "../../context/FilterContext";
+import { useData } from "../../context/DataContext";
 import { Oval } from 'react-loader-spinner';
 
 const GradeViolinPlot = () => {
   const svgRef = useRef();
   const wrapperRef = useRef();
+  const { rawData, loading: dataLoading } = useData();
   const [rawSubjectData, setRawSubjectData] = useState([]);  
   const { filters } = useFilters();
   const selectedSubject = filters.Disciplina?.value;
   const [containerWidth, setContainerWidth] = useState(700); // Initial width
   const yearRange = filters.years;
-  const [loading, setLoading] = useState(false);
 
   // Function to handle window resizing
   const updateWidth = () => {
@@ -28,19 +29,17 @@ const GradeViolinPlot = () => {
 
   // Fetch raw data only when subject changes
   useEffect(() => {
+    if (!selectedSubject || dataLoading) return;
+
     const fetchData = async () => {
-      setLoading(true);
       try {
-        const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv");
         const subjectData = rawData.filter(d => 
           d.idisciplinaid === selectedSubject
         );
         setRawSubjectData(subjectData);
       } catch (error) {
         console.error("Error loading data:", error);
-      } finally {
-        setLoading(false);
-      }
+      } 
     };
 
     if (selectedSubject) {
@@ -245,7 +244,7 @@ const GradeViolinPlot = () => {
 
   return (
     <>
-      {loading ? (
+      {dataLoading ? (
         <div className="flex flex-col items-center w-full h-full p-2">
           <div className="flex-1 w-full flex items-center justify-center">
             <Oval

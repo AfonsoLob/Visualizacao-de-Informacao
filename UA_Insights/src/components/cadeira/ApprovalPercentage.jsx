@@ -2,31 +2,30 @@ import React, { useState, useEffect, useMemo } from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import * as d3 from "d3";
 import { useFilters } from "../../context/FilterContext";
+import { useData } from "../../context/DataContext";
 import { Oval } from 'react-loader-spinner';
 
 const ApprovedPercentagePerYear = () => {
+  const { rawData, loading: dataLoading } = useData();
   const [rawSubjectData, setRawSubjectData] = useState([]);
   const { filters } = useFilters();
   const selectedSubject = filters.Disciplina?.value;
   const yearRange = filters.years;
-  const [loading, setLoading] = useState(false);
 
   
   // Fetch and process data only when subject changes
   useEffect(() => {
+    if (!selectedSubject || dataLoading) return;
+
     const fetchSubjectData = async () => {
-      setLoading(true);
       try {
-        const rawData = await d3.csv("/notas-alunos-2012-2022-corrigido.csv");
         const subjectData = rawData.filter((d) => 
           d.idisciplinaid === selectedSubject
         );
         setRawSubjectData(subjectData);
       } catch (error) {
         console.error("Error processing data:", error);
-      } finally {
-        setLoading(false);
-      }
+      } 
     };
 
     if (selectedSubject) {
@@ -61,7 +60,7 @@ const ApprovedPercentagePerYear = () => {
 
 return (
   <>
-      {loading ? (
+      {dataLoading ? (
                 <div className="flex flex-col items-center w-full h-full p-2">
                 <div className="flex-1 w-full flex items-center justify-center">
                     <Oval
