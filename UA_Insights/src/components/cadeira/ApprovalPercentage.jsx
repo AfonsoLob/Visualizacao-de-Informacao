@@ -81,19 +81,24 @@ return (
       ) : (
         <div className="w-full">
           <h2>Percentagem de Aprovados por Ano</h2>
+          
           <ResponsiveContainer width="100%" height={300}>
-            <BarChart
-              data={displayData}
-              margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="year" stroke="#ffffff" />
-              <YAxis stroke="#ffffff" />
-              <Tooltip contentStyle={{ backgroundColor: '#2d3448' }} />
-              <Legend />
-              <Bar dataKey="percentage" fill="#68e713" />
-            </BarChart>
-          </ResponsiveContainer>
+  <BarChart
+    data={displayData}
+    margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+  >
+    <CartesianGrid strokeDasharray="3 3" />
+    <XAxis dataKey="year" stroke="#ffffff" />
+    <YAxis domain={[0, 100]} stroke="#ffffff" />
+    <Tooltip contentStyle={{ backgroundColor: '#2d3448' }} />
+    <Legend />
+    <Bar 
+      dataKey="percentage"  // Changed from "Percentage" to "percentage"
+      name="Taxa de Aprovação"
+      fill="#68e713" 
+    />
+  </BarChart>
+</ResponsiveContainer>
         </div>
 
       )}

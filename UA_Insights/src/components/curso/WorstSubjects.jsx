@@ -87,7 +87,7 @@ const WorstSubjects = () => {
       ) : (
         <div className="h-full flex flex-col">
           <div className="flex justify-between items-center mb-4">
-            <h2 className="text-xl font-bold">Top 5 Cadeiras com Maior Taxa de Reprovação</h2>
+            <h2 className="text-xl font-bold">5 Cadeiras com Maior Taxa de Reprovação</h2>
             <div className="flex gap-1 overflow-x-auto">
               {years.map((year) => (
                 <button
