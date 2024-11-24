@@ -4,7 +4,6 @@ import ApprovalLineChart from "../components/universidade/ApprovalLineChart";
 import StudentsDepartmentHeatmap from "../components/universidade/StudentsDepartmentHeatmap";
 
 const Universidade = () => {
-    const csvFile = "/notas-alunos-2012-2022-corrigido.csv";
 
     return (
       <div className="grid grid-cols-2 gap-5 justify-evenly items-center h-auto mt-5">
