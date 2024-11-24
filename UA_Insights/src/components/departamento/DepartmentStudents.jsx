@@ -1,24 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Legend } from "recharts";
 import { useFilters } from "../../context/FilterContext";
+import { useCourseMapping } from "../../context/courseContext";
 import * as d3 from "d3";
-
-const parseCSV = (text) => {
-  const lines = text.split('\n');
-  const headers = lines[0].split(',');
-  const result = {};
-  
-  for (let i = 1; i < lines.length; i++) {
-    const currentLine = lines[i].split(',');
-    if (currentLine.length === headers.length) {
-      const codigo = currentLine[0].trim();
-      const nome = currentLine[1].trim();
-      const grau = currentLine[2].trim();
-      result[codigo] = { nome, grau };
-    }
-  }
-  return result;
-};
 
 const DepartmentStudents = () => {
   const [licenciaturaData, setLicenciaturaData] = useState([]);
@@ -27,18 +11,7 @@ const DepartmentStudents = () => {
   const [activeChart, setActiveChart] = useState("Licenciaturas"); // Controls which chart is shown
   const { filters } = useFilters();
   const selectedDepartment = filters.Departamento?.value;
-  const csvCodigoNome = "/cursocod-nome-grau.csv";
-  const [courseMapping, setCourseMapping] = useState({});
-
-  useEffect(() => {
-    fetch(csvCodigoNome)
-      .then(response => response.text())
-      .then(data => {
-        const mapping = parseCSV(data);
-        setCourseMapping(mapping);
-      })
-      .catch(error => console.error('Error loading CSV:', error));
-  }, [csvCodigoNome]);
+  const courseMapping = useCourseMapping();
 
   useEffect(() => {
     const fetchData = async () => {
