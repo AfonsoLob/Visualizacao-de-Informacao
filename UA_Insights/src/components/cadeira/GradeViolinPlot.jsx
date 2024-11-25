@@ -191,8 +191,8 @@ const GradeViolinPlot = () => {
         violinGroup
           .append("path")
           .datum(d.bins)
-          .style("fill", "#69b3a2")
-          .style("opacity", 0.7)
+          .style("fill", "rgb(104,231,19")
+          .style("opacity", 0.8)
           .style("stroke", "none")
           .attr(
             "d",
@@ -233,7 +233,7 @@ const GradeViolinPlot = () => {
           .on("mouseout", () => {
             // Reset violin plot style
             violinGroup.select("path")
-              .style("opacity", 0.7)
+              .style("opacity", 0.8)
               .style("stroke", "none");
 
             // Hide tooltip
