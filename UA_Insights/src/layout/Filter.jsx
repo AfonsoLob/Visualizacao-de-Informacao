@@ -1,146 +1,127 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import Slider from "@mui/material/Slider";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
+import { useFilterConfig } from '../hook/useFilterConfig';
+import { useFilters } from '../context/FilterContext';
 import * as d3 from "d3";
+import Select from 'react-select'; // Util porque deixa dar seach e escolher varias cadeiras ao mesmo tempo (se for preciso)
+import { useCourseMapping } from "../context/courseContext";
 
 export const Filter = () => {
+
+  const { filters, updateFilter } = useFilters();
+  const filterConfig = useFilterConfig();
   const [yearRange, setYearRange] = useState([2012, 2022]);
   const [dynamicOptions, setDynamicOptions] = useState([]); // Holds dynamic options for the current filter
-  const [selectedOption, setSelectedOption] = useState("");
   const minYear = 2012;
   const maxYear = 2022;
-  const location = useLocation();
+  const courseMapping = useCourseMapping();
 
-  const csvFile = "/notas-alunos-2012-2022-corrigido.csv";
+  // const [selectedOption, setSelectedOption] = useState("");
+  // const location = useLocation();  
+  // const csvFile = "/notas-alunos-2012-2022-corrigido.csv";
 
-  // Mocked filter configurations
-  const filterConfig = {
-    "/universidade": [
-      {
-        label: "Regime",
-        type: "select",
-        options: ["Todos", "Ordinário", "Trabalhador-Estudante"],
+  
+  // Custom styles for react-select to match dark theme
+  const customStyles = {
+    control: (base) => ({
+      ...base,
+      background: '#374151',
+      borderColor: '#4B5563',
+      '&:hover': {
+        borderColor: '#6B7280',
       },
-      {
-        label: "Tipo de Acesso",
-        type: "select",
-        options: ["Todos", "Regime Geral", "Transferência"],
+    }),
+    menu: (base) => ({
+      ...base,
+      background: '#374151',
+    }),
+    option: (base, { isFocused, isSelected }) => ({
+      ...base,
+      background: isSelected
+        ? '#68E713'
+        : isFocused
+          ? '#4B5563'
+          : '#374151',
+      color: isSelected ? 'black' : 'white',
+      '&:hover': {
+        background: '#4B5563',
       },
-    ],
-    "/departamento": [
-      {
-        label: "Departamento",
-        type: "select",
-        options: ["DETI", "DBIO", "DMAT"],
-      },
-      {
-        label: "Taxa de Aprovação",
-        type: "select",
-        options: ["Todas", ">50%", ">75%"],
-      },
-    ],
-    "/curso": [
-      {
-        label: "Curso",
-        type: "dynamic-select",
-        code: "icursocod",
-      },
-      {
-        label: "Semestre",
-        type: "select",
-        options: ["Todos", "1º", "2º"],
-      },
-    ],
-    "/cadeira": [
-      {
-        label: "Disciplina",
-        type: "dynamic-select",
-        code: "idisciplinaid",
-      },
-      {
-        label: "Época",
-        type: "select",
-        options: ["Todas", "Normal", "Recurso"],
-      },
-    ],
+    }),
+    singleValue: (base) => ({
+      ...base,
+      color: 'white',
+    }),
+    input: (base) => ({
+      ...base,
+      color: 'white',
+    }),
   };
-
   const marks = Array.from({ length: maxYear - minYear + 1 }, (_, i) => ({
     value: minYear + i,
     label:
       minYear + i === minYear || minYear + i === maxYear ? `${minYear + i}` : "|",
   }));
-
   const handleYearRangeChange = (_, newValue) => {
     setYearRange(newValue);
+    updateFilter('years', newValue);
   };
+  // End custom 
 
-  const handleOptionChange = (event) => {
-    const value = event.target.value;
-    setSelectedOption(value);
-  };
-
-  // General function to load unique options dynamically
-  const loadDynamicOptions = async (field) => {
-    try {
-      const data = await d3.csv(csvFile);
-      const uniqueOptions = Array.from(
-        new Set(data.map((d) => d[field]))
-      ).sort(); // Extract and sort unique values
-      setDynamicOptions(uniqueOptions);
-    } catch (error) {
-      console.error(`Erro ao carregar opções para ${field}:`, error);
-    }
-  };
-
-  // UseEffect to handle dynamic field loading based on the current path
   useEffect(() => {
-    const currentFilters = filterConfig[location.pathname];
-    const dynamicFilter = currentFilters?.find(
-      (filter) => filter.type === "dynamic-select"
-    );
+    const loadOptions = async () => {
+      const dynamicFilters = filterConfig.filter(f => f.isDynamic);
+      
+      for (const filter of dynamicFilters) {
+        try {
+          const data = await d3.csv('/notas-alunos-2012-2022-corrigido.csv');
+          const options = Array.from(new Set(data.map(d => d[filter.field])))
+            .sort()
+            .map(value => ({ value, label: value }));
+          
+          setDynamicOptions(prev => ({
+            ...prev,
+            [filter.field]: options
+          }));
+        } catch (error) {
+          console.error(`Error loading options for ${filter.field}:`, error);
+        }
+      }
+    };
 
-    if (dynamicFilter) {
-      loadDynamicOptions(dynamicFilter.code); // Load options for the specified field
-    } else {
-      setDynamicOptions([]); // Clear options if no dynamic filter is active
-    }
-  }, [location.pathname]);
-
-  const currentFilters =
-    filterConfig[location.pathname] || filterConfig["/universidade"];
+    loadOptions();
+  }, [filterConfig]);
 
   const renderFilter = (filter) => {
     switch (filter.type) {
-      case "select":
+      case 'select':
+        const currentValue = filters[filter.label] || null;
         return (
-          <select className="w-full p-2 rounded bg-gray-700 border border-gray-600 text-white">
-            {filter.options.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
-        );
-      case "dynamic-select":
-        return (
-          <select
-            className="w-full p-2 rounded bg-gray-700 border border-gray-600 text-white"
-            value={selectedOption}
-            onChange={handleOptionChange}
-          >
-            {dynamicOptions.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
+          <Select
+            key={`${location.pathname}-${filter.label}`}
+            styles={customStyles}
+            options={filter.isDynamic ? 
+              (filter.label === "Departamento" ? 
+          (dynamicOptions[filter.field] || []).map(opt => ({ ...opt, label: opt.label.toUpperCase() })) : 
+          filter.label === "Curso" ? 
+            (dynamicOptions[filter.field] || []).map(opt => {
+              const course = courseMapping[opt.value];
+              const grauInitial = course ? `(${course.grau.charAt(0)}) ` : '';
+              return { ...opt, label: `${grauInitial}${course ? course.nome : opt.label}` };
+            }) : 
+            dynamicOptions[filter.field] || []) : 
+              filter.options.map(opt => ({ value: opt, label: filter.label === "Departamento" ? opt.toUpperCase() : opt }))}
+            onChange={(value) => updateFilter(filter.label, value)}
+            value={filters[filter.field]}
+            placeholder={`Select ${filter.label}...`}
+          />
         );
       default:
         return null;
     }
   };
 
+  
   return (
     <div className="w-1/4 bg-gray-800 text-white p-4">
       <img src="/UA_logo.png" alt="UA Logo" className="w-72 mb-8 mx-auto" />
@@ -151,7 +132,8 @@ export const Filter = () => {
         <div className="px-4 pt-1 mb-6">
           <Slider
             value={yearRange}
-            onChange={handleYearRangeChange}
+            onChange={(_, newValue) => setYearRange(newValue)}
+            onChangeCommitted={handleYearRangeChange}
             valueLabelDisplay="auto"
             min={minYear}
             max={maxYear}
@@ -180,7 +162,7 @@ export const Filter = () => {
           />
         </div>
       </div>
-      {currentFilters.map((filter, index) => (
+      {filterConfig.map((filter, index) => (
         <div key={index} className="mb-6">
           <label className="block mb-2">{filter.label}</label>
           {renderFilter(filter)}

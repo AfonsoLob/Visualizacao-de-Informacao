@@ -31,7 +31,7 @@ const Dashboard = () => {
         </div>
         <div className="stat bg-gray-800 text-white rounded-xl text-center w-full">
           <div className="stat-title">Departamentos</div>
-          <div className="stat-value">16</div>
+          <div className="stat-value">18</div>
           <div className="stat-desc flex items-center justify-center gap-1">
             Deti é o melhor <FaSmile className="inline-block  size-4"  />
           </div>
