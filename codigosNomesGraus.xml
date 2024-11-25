@@ -1,0 +1,4211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cursos>
+<curso>
+<guid>54</guid>
+<codigo>8253/2022</codigo>
+<nome>Administração Pública</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Ciências Sociais, Políticas e do Território</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1626</guid>
+<codigo>8328</codigo>
+<nome>Automação e Sistemas de Produção</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>14</guid>
+<codigo>0300/9011</codigo>
+<nome>Biologia</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>15</guid>
+<codigo>0300/9012</codigo>
+<nome>Biologia e Geologia</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>15</guid>
+<codigo>0300/9012</codigo>
+<nome>Biologia e Geologia</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>16</guid>
+<codigo>0300/9015</codigo>
+<nome>Bioquímica</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>17</guid>
+<codigo>0300/9016</codigo>
+<nome>Biotecnologia</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>17</guid>
+<codigo>0300/9016</codigo>
+<nome>Biotecnologia</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>18</guid>
+<codigo>0300/9351</codigo>
+<nome>Ciências Biomédicas</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>19</guid>
+<codigo>0300/9041</codigo>
+<nome>Ciências do Mar</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>19</guid>
+<codigo>0300/9041</codigo>
+<nome>Ciências do Mar</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>19</guid>
+<codigo>0300/9041</codigo>
+<nome>Ciências do Mar</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>19</guid>
+<codigo>0300/9041</codigo>
+<nome>Ciências do Mar</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>19</guid>
+<codigo>0300/9041</codigo>
+<nome>Ciências do Mar</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>48</guid>
+<codigo>3011/9056</codigo>
+<nome>Contabilidade</nome>
+<grau>Licenciatura</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>448</guid>
+<codigo>3011/9869</codigo>
+<nome>Contabilidade pós-laboral</nome>
+<grau>Licenciatura</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>20</guid>
+<codigo>0300/9069</codigo>
+<nome>Design</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>46</guid>
+<codigo>3014/L138</codigo>
+<nome>Design de Produto e Tecnologia</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>21</guid>
+<codigo>0300/9081</codigo>
+<nome>Economia</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>94</guid>
+<codigo>0300/9853</codigo>
+<nome>Educação Básica</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area>Educação</area>
+</curso>
+<curso>
+<guid>465</guid>
+<codigo>8912</codigo>
+<nome>Eletrónica e Mecânica Industrial</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>168</guid>
+<codigo>3013/9500</codigo>
+<nome>Enfermagem</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>514</guid>
+<codigo>8327</codigo>
+<nome>Engenharia Aeroespacial</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>514</guid>
+<codigo>8327</codigo>
+<nome>Engenharia Aeroespacial</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>514</guid>
+<codigo>8327</codigo>
+<nome>Engenharia Aeroespacial</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>514</guid>
+<codigo>8327</codigo>
+<nome>Engenharia Aeroespacial</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>514</guid>
+<codigo>8327</codigo>
+<nome>Engenharia Aeroespacial</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>478</guid>
+<codigo>8317</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>478</guid>
+<codigo>8317</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>478</guid>
+<codigo>8317</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>491</guid>
+<codigo>8323</codigo>
+<nome>Engenharia Civil</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>477</guid>
+<codigo>G009</codigo>
+<nome>Engenharia Computacional</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>477</guid>
+<codigo>G009</codigo>
+<nome>Engenharia Computacional</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>477</guid>
+<codigo>G009</codigo>
+<nome>Engenharia Computacional</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Matemática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>470</guid>
+<codigo>8312</codigo>
+<nome>Engenharia de Automação Industrial</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>470</guid>
+<codigo>8312</codigo>
+<nome>Engenharia de Automação Industrial</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>486</guid>
+<codigo>8316</codigo>
+<nome>Engenharia de Computadores e Informática</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>483</guid>
+<codigo>8319</codigo>
+<nome>Engenharia de Materiais</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>484</guid>
+<codigo>8318</codigo>
+<nome>Engenharia do Ambiente</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>481</guid>
+<codigo>8314</codigo>
+<nome>Engenharia e Gestão Industrial</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>480</guid>
+<codigo>8321</codigo>
+<nome>Engenharia Eletrotécnica e de Computadores</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>485</guid>
+<codigo>8320</codigo>
+<nome>Engenharia Física</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>383</guid>
+<codigo>0300/9119</codigo>
+<nome>Engenharia Informática</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1732</guid>
+<codigo>8914</codigo>
+<nome>Engenharia Informática Aplicada</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>482</guid>
+<codigo>8313</codigo>
+<nome>Engenharia Mecânica</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>479</guid>
+<codigo>8315</codigo>
+<nome>Engenharia Química</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>50</guid>
+<codigo>3011/9140</codigo>
+<nome>Finanças</nome>
+<grau>Licenciatura</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>449</guid>
+<codigo>3011/9888</codigo>
+<nome>Finanças pós-laboral</nome>
+<grau>Licenciatura</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>33</guid>
+<codigo>0300/9141</codigo>
+<nome>Física</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>170</guid>
+<codigo>3013/9504</codigo>
+<nome>Fisioterapia</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>418</guid>
+<codigo>0300/9146</codigo>
+<nome>Geologia</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>34</guid>
+<codigo>0300/9147</codigo>
+<nome>Gestão</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>64</guid>
+<codigo>3012/L021</codigo>
+<nome>Gestão Comercial</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>222</guid>
+<codigo>3012/8405</codigo>
+<nome>Gestão da Qualidade</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>452</guid>
+<codigo>8310</codigo>
+<nome>Gestão e Planeamento em Turismo</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>65</guid>
+<codigo>3012/8913</codigo>
+<nome>Gestão Pública</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>406</guid>
+<codigo>3013/L066</codigo>
+<nome>Imagem Médica e Radioterapia</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>35</guid>
+<codigo>0300/9194</codigo>
+<nome>Línguas e Estudos Editoriais</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>36</guid>
+<codigo>0300/9196</codigo>
+<nome>Línguas e Relações Empresariais</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>37</guid>
+<codigo>0300/9204</codigo>
+<nome>Línguas, Literaturas e Culturas</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>51</guid>
+<codigo>3011/9205</codigo>
+<nome>Marketing</nome>
+<grau>Licenciatura</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>447</guid>
+<codigo>3011/8005</codigo>
+<nome>Marketing pós-laboral</nome>
+<grau>Licenciatura</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>38</guid>
+<codigo>0300/9209</codigo>
+<nome>Matemática</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Matemática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1625</guid>
+<codigo>8326</codigo>
+<nome>Meteorologia, Oceanografia e Clima</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>39</guid>
+<codigo>0300/9212</codigo>
+<nome>Meteorologia, Oceanografia e Geofísica</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1531</guid>
+<codigo>8325</codigo>
+<nome>Multimédia e Tecnologias da Comunicação</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>40</guid>
+<codigo>0300/8218</codigo>
+<nome>Música</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>42</guid>
+<codigo>0300/9219</codigo>
+<nome>Psicologia</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>43</guid>
+<codigo>0300/9223</codigo>
+<nome>Química</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>66</guid>
+<codigo>3012/9235</codigo>
+<nome>Secretariado e Comunicação Empresarial</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>63</guid>
+<codigo>3012/8016</codigo>
+<nome>Tecnologias da Informação</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>174</guid>
+<codigo>3013/9890</codigo>
+<nome>Terapia da Fala</nome>
+<grau>Licenciatura</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>44</guid>
+<codigo>0300/9252</codigo>
+<nome>Tradução</nome>
+<grau>Licenciatura</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>425</guid>
+<codigo>0300/9359</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>425</guid>
+<codigo>0300/9359</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>425</guid>
+<codigo>0300/9359</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>95</guid>
+<codigo>0300/9360</codigo>
+<nome>Engenharia Civil</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>426</guid>
+<codigo>0300/G009</codigo>
+<nome>Engenharia Computacional</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>426</guid>
+<codigo>0300/G009</codigo>
+<nome>Engenharia Computacional</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>426</guid>
+<codigo>0300/G009</codigo>
+<nome>Engenharia Computacional</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Matemática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>23</guid>
+<codigo>0300/9361</codigo>
+<nome>Engenharia de Computadores e Telemática</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>428</guid>
+<codigo>0300/9363</codigo>
+<nome>Engenharia de Materiais</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>385</guid>
+<codigo>0300/9508</codigo>
+<nome>Engenharia do Ambiente</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>437</guid>
+<codigo>0300/9509</codigo>
+<nome>Engenharia e Gestão Industrial</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>27</guid>
+<codigo>0300/9365</codigo>
+<nome>Engenharia Eletrónica e Telecomunicações</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>28</guid>
+<codigo>0300/9368</codigo>
+<nome>Engenharia Física</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>30</guid>
+<codigo>0300/9369</codigo>
+<nome>Engenharia Mecânica</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>31</guid>
+<codigo>0300/9461</codigo>
+<nome>Engenharia Química</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Química</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1731</guid>
+<codigo>8329</codigo>
+<nome>Medicina</nome>
+<grau>Mestrado Integrado</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area>Ciências e Tecnologias da Saúde</area>
+</curso>
+<curso>
+<guid>1529</guid>
+<codigo>9311</codigo>
+<nome>Administração e Politicas Públicas</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Sociais, Políticas e do Território</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>1527</guid>
+<codigo>9309</codigo>
+<nome>Ambiente e Saúde</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1527</guid>
+<codigo>9309</codigo>
+<nome>Ambiente e Saúde</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1527</guid>
+<codigo>9309</codigo>
+<nome>Ambiente e Saúde</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1527</guid>
+<codigo>9309</codigo>
+<nome>Ambiente e Saúde</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1532</guid>
+<codigo>9312</codigo>
+<nome>Assessoria de Direção e Comunicação nas Organizações</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>1624</guid>
+<codigo>9316</codigo>
+<nome>Avaliação e Gestão Ambiental</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>461</guid>
+<codigo>9280</codigo>
+<nome>Bioinformática Clínica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>192</guid>
+<codigo>9211</codigo>
+<nome>Biologia Aplicada</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Biologia</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>451</guid>
+<codigo>9275</codigo>
+<nome>Biologia Marinha Aplicada</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>118</guid>
+<codigo>9150</codigo>
+<nome>Biologia Molecular e Celular</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Biologia</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>1738</guid>
+<codigo>9333</codigo>
+<nome>Biomateriais e Nanomedicina</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1738</guid>
+<codigo>9333</codigo>
+<nome>Biomateriais e Nanomedicina</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>127</guid>
+<codigo>9153</codigo>
+<nome>Biomedicina Molecular</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area>Ciências e Tecnologias da Saúde</area>
+</curso>
+<curso>
+<guid>186</guid>
+<codigo>9216</codigo>
+<nome>Bioquímica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Química</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>187</guid>
+<codigo>9210</codigo>
+<nome>Biotecnologia</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Biologia</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>187</guid>
+<codigo>9210</codigo>
+<nome>Biotecnologia</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Química</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>462</guid>
+<codigo>9281</codigo>
+<nome>Cibersegurança</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>515</guid>
+<codigo>9306</codigo>
+<nome>Ciência de Dados</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>515</guid>
+<codigo>9306</codigo>
+<nome>Ciência de Dados</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Matemática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>473</guid>
+<codigo>9288</codigo>
+<nome>Ciência de Dados para Ciências Sociais</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Sociais, Políticas e do Território</departamento>
+<area/>
+</curso>
+<curso>
+<guid>102</guid>
+<codigo>9155</codigo>
+<nome>Ciência Política</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Sociais, Políticas e do Território</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>429</guid>
+<codigo>9265</codigo>
+<nome>Ciências do Mar e da Atmosfera</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>429</guid>
+<codigo>9265</codigo>
+<nome>Ciências do Mar e da Atmosfera</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>429</guid>
+<codigo>9265</codigo>
+<nome>Ciências do Mar e da Atmosfera</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>429</guid>
+<codigo>9265</codigo>
+<nome>Ciências do Mar e da Atmosfera</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>429</guid>
+<codigo>9265</codigo>
+<nome>Ciências do Mar e da Atmosfera</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>429</guid>
+<codigo>9265</codigo>
+<nome>Ciências do Mar e da Atmosfera</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>516</guid>
+<codigo>9304</codigo>
+<nome>Competitividade e Desenvolvimento de Negócios</nome>
+<grau>Mestrado</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>509</guid>
+<codigo>9301</codigo>
+<nome>Comunicação Audiovisual Para Novos Média</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>508</guid>
+<codigo>9300</codigo>
+<nome>Comunicação e Tecnologias Web</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>512</guid>
+<codigo>9303</codigo>
+<nome>Construção e Reabilitação de Infraestruturas de Transporte</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>131</guid>
+<codigo>9229</codigo>
+<nome>Contabilidade</nome>
+<grau>Mestrado</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>453</guid>
+<codigo>9277</codigo>
+<nome>Contabilidade e Controlo de Gestão</nome>
+<grau>Mestrado</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>100</guid>
+<codigo>9159</codigo>
+<nome>Criação Artística Contemporânea</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>513</guid>
+<codigo>9305</codigo>
+<nome>Desenvolvimento de Jogos Digitais</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>513</guid>
+<codigo>9305</codigo>
+<nome>Desenvolvimento de Jogos Digitais</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1536</guid>
+<codigo>9315</codigo>
+<nome>Design</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>450</guid>
+<codigo>9273</codigo>
+<nome>Eco-toxicologia e Análise de Risco</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>367</guid>
+<codigo>9241</codigo>
+<nome>Ecologia Aplicada</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>107</guid>
+<codigo>9161</codigo>
+<nome>Economia</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>411</guid>
+<codigo>9254</codigo>
+<nome>Educação e Formação</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>201</guid>
+<codigo>9260</codigo>
+<nome>Educação Pré-Escolar e Ensino no 1º Ciclo do Ensino Básico</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area>Educação</area>
+</curso>
+<curso>
+<guid>1534</guid>
+<codigo>9313</codigo>
+<nome>Enfermagem Comunitária, na Área de Enfermagem de Saúde Familiar</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area>Ciências e Tecnologias da Saúde</area>
+</curso>
+<curso>
+<guid>1706</guid>
+<codigo>9322</codigo>
+<nome>Enfermagem Médico-Cirúrgica, na Área De Enfermagem À Pessoa Em Situação Crítica</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area>Ciências e Tecnologias da Saúde</area>
+</curso>
+<curso>
+<guid>1705</guid>
+<codigo>9321</codigo>
+<nome>Enfermagem Médico-Cirúrgica, na Área De Enfermagem À Pessoa Em Situação Crónica</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area>Ciências e Tecnologias da Saúde</area>
+</curso>
+<curso>
+<guid>1730</guid>
+<codigo>9332</codigo>
+<nome>Engenharia Aeroespacial</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1730</guid>
+<codigo>9332</codigo>
+<nome>Engenharia Aeroespacial</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1730</guid>
+<codigo>9332</codigo>
+<nome>Engenharia Aeroespacial</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1730</guid>
+<codigo>9332</codigo>
+<nome>Engenharia Aeroespacial</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1730</guid>
+<codigo>9332</codigo>
+<nome>Engenharia Aeroespacial</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>501</guid>
+<codigo>9292</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>501</guid>
+<codigo>9292</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>501</guid>
+<codigo>9292</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>487</guid>
+<codigo>9296</codigo>
+<nome>Engenharia Civil</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>503</guid>
+<codigo>9294</codigo>
+<nome>Engenharia Computacional</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>503</guid>
+<codigo>9294</codigo>
+<nome>Engenharia Computacional</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>503</guid>
+<codigo>9294</codigo>
+<nome>Engenharia Computacional</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Matemática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>460</guid>
+<codigo>9279</codigo>
+<nome>Engenharia da Soldadura</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>460</guid>
+<codigo>9279</codigo>
+<nome>Engenharia da Soldadura</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>460</guid>
+<codigo>9279</codigo>
+<nome>Engenharia da Soldadura</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>124</guid>
+<codigo>9163</codigo>
+<nome>Engenharia de Automação Industrial</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>124</guid>
+<codigo>9163</codigo>
+<nome>Engenharia de Automação Industrial</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>500</guid>
+<codigo>9291</codigo>
+<nome>Engenharia de Computadores e Telemática</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1718</guid>
+<codigo>9326</codigo>
+<nome>Engenharia de Manutenção Industrial</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>507</guid>
+<codigo>9299</codigo>
+<nome>Engenharia de Materiais</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>498</guid>
+<codigo>9293</codigo>
+<nome>Engenharia do Ambiente</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>329</guid>
+<codigo>9239</codigo>
+<nome>Engenharia e Design de Produto</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>329</guid>
+<codigo>9239</codigo>
+<nome>Engenharia e Design de Produto</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>329</guid>
+<codigo>9239</codigo>
+<nome>Engenharia e Design de Produto</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>329</guid>
+<codigo>9239</codigo>
+<nome>Engenharia e Design de Produto</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>499</guid>
+<codigo>9297</codigo>
+<nome>Engenharia e Gestão Industrial</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>502</guid>
+<codigo>9295</codigo>
+<nome>Engenharia Eletrónica e Telecomunicações</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>497</guid>
+<codigo>9298</codigo>
+<nome>Engenharia Física</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>97</guid>
+<codigo>9149</codigo>
+<nome>Engenharia Geológica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Geociências</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>417</guid>
+<codigo>9263</codigo>
+<nome>Engenharia Informática</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>488</guid>
+<codigo>9289</codigo>
+<nome>Engenharia Mecânica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1717</guid>
+<codigo>9327</codigo>
+<nome>Engenharia Mecatrónica</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>489</guid>
+<codigo>9290</codigo>
+<nome>Engenharia Química</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>139</guid>
+<codigo>9142</codigo>
+<nome>Ensino de Biologia e de Geologia no 3.º Ciclo do Ensino Básico e no Ensino Secundário</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area>Educação</area>
+</curso>
+<curso>
+<guid>1665</guid>
+<codigo>9144</codigo>
+<nome>Ensino de Física e de Química no 3º Ciclo do Ensino Básico e no Ensino Secundário</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area>Educação</area>
+</curso>
+<curso>
+<guid>330</guid>
+<codigo>9257</codigo>
+<nome>Ensino de Inglês e de Língua Estrangeira no 3º ciclo do Ensino Básico e no Ensino Secundário, na especialidade de Alemão ou Francês ou Espanhol</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>413</guid>
+<codigo>9261</codigo>
+<nome>Ensino de Inglês no 1º Ciclo do Ensino Básico</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>138</guid>
+<codigo>9194</codigo>
+<nome>Ensino de Matemática no 3.º Ciclo do Ensino Básico e no Ensino Secundário</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area>Educação</area>
+</curso>
+<curso>
+<guid>184</guid>
+<codigo>9237</codigo>
+<nome>Ensino de Música</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>184</guid>
+<codigo>9237</codigo>
+<nome>Ensino de Música</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>408</guid>
+<codigo>9258</codigo>
+<nome>Ensino de Português e de Língua Estrangeira no 3º Ciclo do Ensino Básico e no ensino Secundário, na especialidade de Alemão ou Francês ou Espanhol</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>410</guid>
+<codigo>9259</codigo>
+<nome>Ensino do 1º Ciclo do Ensino Básico e de Matemática e Ciências Naturais do 2º Ciclo do Ensino Básico</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>412</guid>
+<codigo>9256</codigo>
+<nome>Ensino do 1º ciclo do Ensino Básico e de Português e História e Geografia de Portugal no 2º Ciclo do Ensino Básico</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>445</guid>
+<codigo>9271</codigo>
+<nome>Estatística Médica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>445</guid>
+<codigo>9271</codigo>
+<nome>Estatística Médica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Matemática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>154</guid>
+<codigo>9226</codigo>
+<nome>Estudos Chineses</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Sociais, Políticas e do Território</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>119</guid>
+<codigo>9166</codigo>
+<nome>Estudos Editoriais</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>409</guid>
+<codigo>9249</codigo>
+<nome>Finanças</nome>
+<grau>Mestrado</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>112</guid>
+<codigo>9167</codigo>
+<nome>Física (lecionado em inglês)</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>364</guid>
+<codigo>9266</codigo>
+<nome>Fisioterapia</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1715</guid>
+<codigo>9325</codigo>
+<nome>Fisioterapia Cardiovascular e Respiratória</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1716</guid>
+<codigo>9324</codigo>
+<nome>Fisioterapia Musculoesquelética</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>98</guid>
+<codigo>9169</codigo>
+<nome>Geomateriais e Recursos Geológicos</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Geociências</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>439</guid>
+<codigo>9269</codigo>
+<nome>Gerontologia Aplicada</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>109</guid>
+<codigo>9171</codigo>
+<nome>Gestão</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>438</guid>
+<codigo>9268</codigo>
+<nome>Gestão Comercial</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>440</guid>
+<codigo>9270</codigo>
+<nome>Gestão da Investigação Clínica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>466</guid>
+<codigo>9282</codigo>
+<nome>Gestão da Qualidade Total</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1533</guid>
+<codigo>9314</codigo>
+<nome>Gestão e Negócios Digitais</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>110</guid>
+<codigo>9172</codigo>
+<nome>Gestão e Planeamento em Turismo</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>454</guid>
+<codigo>9276</codigo>
+<nome>Informática Aplicada</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>121</guid>
+<codigo>9173</codigo>
+<nome>Línguas e Relações Empresariais</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>468</guid>
+<codigo>9285</codigo>
+<nome>Manufatura Aditiva</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>468</guid>
+<codigo>9285</codigo>
+<nome>Manufatura Aditiva</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>468</guid>
+<codigo>9285</codigo>
+<nome>Manufatura Aditiva</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>216</guid>
+<codigo>9231</codigo>
+<nome>Marketing</nome>
+<grau>Mestrado</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>469</guid>
+<codigo>9284</codigo>
+<nome>Marketing e Comunicação Digital</nome>
+<grau>Mestrado</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>123</guid>
+<codigo>9264</codigo>
+<nome>Matemática e Aplicações</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Matemática</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>363</guid>
+<codigo>9244</codigo>
+<nome>Matemática para Professores</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Matemática</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>116</guid>
+<codigo>9137</codigo>
+<nome>Microbiologia</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Biologia</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>472</guid>
+<codigo>9286</codigo>
+<nome>Mobilidade Inteligente</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>99</guid>
+<codigo>9179</codigo>
+<nome>Música</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>103</guid>
+<codigo>9180</codigo>
+<nome>Planeamento Regional e Urbano</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Sociais, Políticas e do Território</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>416</guid>
+<codigo>9262</codigo>
+<nome>Português Língua Estrangeira/Língua Segunda</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>471</guid>
+<codigo>9287</codigo>
+<nome>Produto e Tecnologia Digital</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>511</guid>
+<codigo>9302</codigo>
+<nome>Projeto de Estruturas</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1528</guid>
+<codigo>9308</codigo>
+<nome>Psicologia da Saúde e Neuropsicologia</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area>Ciências e Tecnologias da Saúde</area>
+</curso>
+<curso>
+<guid>185</guid>
+<codigo>9215</codigo>
+<nome>Química (lecionado em inglês)</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Química</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>457</guid>
+<codigo>9278</codigo>
+<nome>Reabilitação do Património</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>467</guid>
+<codigo>9283</codigo>
+<nome>Robótica e Sistemas Inteligentes</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>467</guid>
+<codigo>9283</codigo>
+<nome>Robótica e Sistemas Inteligentes</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>92</guid>
+<codigo>9182</codigo>
+<nome>Sistemas Energéticos Sustentáveis</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>92</guid>
+<codigo>9182</codigo>
+<nome>Sistemas Energéticos Sustentáveis</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>92</guid>
+<codigo>9182</codigo>
+<nome>Sistemas Energéticos Sustentáveis</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>378</guid>
+<codigo>9251</codigo>
+<nome>Tecnologias da Imagem Médica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>378</guid>
+<codigo>9251</codigo>
+<nome>Tecnologias da Imagem Médica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>378</guid>
+<codigo>9251</codigo>
+<nome>Tecnologias da Imagem Médica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>378</guid>
+<codigo>9251</codigo>
+<nome>Tecnologias da Imagem Médica</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>378</guid>
+<codigo>9251</codigo>
+<nome>Tecnologias da Imagem Médica</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>446</guid>
+<codigo>9272</codigo>
+<nome>Terapia da Fala</nome>
+<grau>Mestrado</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>122</guid>
+<codigo>9274</codigo>
+<nome>Tradução Especializada</nome>
+<grau>Mestrado</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>1553</guid>
+<codigo>5217</codigo>
+<nome>Aprendizagem Automática e Análise de Dados</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>1553</guid>
+<codigo>5217</codigo>
+<nome>Aprendizagem Automática e Análise de Dados</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Matemática</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>1524</guid>
+<codigo>5206</codigo>
+<nome>Auditorias de Sistemas Integrados de Gestão</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1543</guid>
+<codigo>5210</codigo>
+<nome>Automação Industrial</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1743</guid>
+<codigo>5230</codigo>
+<nome>Business Angels e Mentoria</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1744</guid>
+<codigo>5232</codigo>
+<nome>Capacitação de Startups para Investimento</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>459</guid>
+<codigo>5162</codigo>
+<nome>Computação Quântica</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Matemática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>361</guid>
+<codigo>5137</codigo>
+<nome>Contabilidade e Auditoria</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>362</guid>
+<codigo>5135</codigo>
+<nome>Contabilidade e Fiscalidade</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>520</guid>
+<codigo>5164</codigo>
+<nome>Dados e Inteligência Artificial</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1520</guid>
+<codigo>5165</codigo>
+<nome>Desenvolvimento de Aplicações Móveis</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1547</guid>
+<codigo>5211</codigo>
+<nome>Desenvolvimento de Materiais Micro e Nano-Estruturados em Ambiente de Sala Limpa</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1696</guid>
+<codigo>5204</codigo>
+<nome>Dosimetria Clínica em Radioterapia</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>436</guid>
+<codigo>5157</codigo>
+<nome>Enfermagem do Trabalho</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>476</guid>
+<codigo>3189</codigo>
+<nome>Estatística Aplicada às Ciências da Saúde</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Matemática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1523</guid>
+<codigo>5207</codigo>
+<nome>Excelência nas Organizações</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1549</guid>
+<codigo>5215</codigo>
+<nome>Gestão da Qualidade na Soldadura</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1729</guid>
+<codigo>5229</codigo>
+<nome>Gestão da Saúde</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>1729</guid>
+<codigo>5229</codigo>
+<nome>Gestão da Saúde</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Ciências Sociais, Políticas e do Território</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>1729</guid>
+<codigo>5229</codigo>
+<nome>Gestão da Saúde</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>1729</guid>
+<codigo>5229</codigo>
+<nome>Gestão da Saúde</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>1521</guid>
+<codigo>5205</codigo>
+<nome>Gestão de Negócios de Retalho</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1548</guid>
+<codigo>5212</codigo>
+<nome>Industrial Intelligence</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>1548</guid>
+<codigo>5212</codigo>
+<nome>Industrial Intelligence</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Matemática</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>1556</guid>
+<codigo>5218</codigo>
+<nome>Inovação e Sustentabilidade nas Cadeias Alimentares</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Química</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>1551</guid>
+<codigo>5213</codigo>
+<nome>Liderança e Gestão na Saúde</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area>Ciências e Tecnologias da Saúde</area>
+</curso>
+<curso>
+<guid>1551</guid>
+<codigo>5213</codigo>
+<nome>Liderança e Gestão na Saúde</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area>Ciências e Tecnologias da Saúde</area>
+</curso>
+<curso>
+<guid>1551</guid>
+<codigo>5213</codigo>
+<nome>Liderança e Gestão na Saúde</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area>Ciências e Tecnologias da Saúde</area>
+</curso>
+<curso>
+<guid>1749</guid>
+<codigo>5231</codigo>
+<nome>Liderança Estratégica</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1542</guid>
+<codigo>5208</codigo>
+<nome>Línguas e Culturas para Negócios</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>1550</guid>
+<codigo>5214</codigo>
+<nome>Línguas e Relações Empresariais</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1585</guid>
+<codigo>5221</codigo>
+<nome>Marketing Digital</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>1586</guid>
+<codigo>5222</codigo>
+<nome>Marketing Omnicanal e Comércio Eletrónico</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>443</guid>
+<codigo>5160</codigo>
+<nome>Perturbações da Linguagem e da Comunicação na Criança </nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>435</guid>
+<codigo>5758</codigo>
+<nome>Perturbações da Linguagem na Criança</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>442</guid>
+<codigo>5161</codigo>
+<nome>Perturbações Neurológicas da Comunicação e da Deglutição no Adulto e no Idoso</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1621</guid>
+<codigo>5227</codigo>
+<nome>Qualidade dos Solos e Sustentabilidade de Sistemas Agrícolas</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Geociências</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>1558</guid>
+<codigo>5220</codigo>
+<nome>Recursos Minerais para a Indústria Cerâmica</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Geociências</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>1617</guid>
+<codigo>5226</codigo>
+<nome>Recursos Minerais para a Indústria das Rochas Ornamentais</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Geociências</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>1620</guid>
+<codigo>5223</codigo>
+<nome>Robótica e Sistemas Inteligentes</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1620</guid>
+<codigo>5223</codigo>
+<nome>Robótica e Sistemas Inteligentes</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1678</guid>
+<codigo>5168</codigo>
+<nome>Soldadura</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1557</guid>
+<codigo>5219</codigo>
+<nome>Tecnologia Cerâmica</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1541</guid>
+<codigo>5209</codigo>
+<nome>Tecnologias Óticas</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>1554</guid>
+<codigo>5216</codigo>
+<nome>Transferência e Valorização do Conhecimento</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>1618</guid>
+<codigo>5225</codigo>
+<nome>Transformação Digital na Contabilidade e na Auditoria</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>1619</guid>
+<codigo>5224</codigo>
+<nome>Viabilidade Tecidular e Cuidados à Pessoa com Ferida</nome>
+<grau>Curso de Especialização</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area>Ciências e Tecnologias da Saúde</area>
+</curso>
+<curso>
+<guid>226</guid>
+<codigo>9204</codigo>
+<nome>Biologia (lecionado em inglês)</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Biologia</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>202</guid>
+<codigo>9942</codigo>
+<nome>Biologia e Ecologia das Alterações Globais (lecionado em inglês)</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Biologia</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>414</guid>
+<codigo>9979</codigo>
+<nome>Biomedicina</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>333</guid>
+<codigo>9915</codigo>
+<nome>Bioquímica</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>431</guid>
+<codigo>9983</codigo>
+<nome>Biorrefinarias</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>444</guid>
+<codigo>9993</codigo>
+<nome>Biotecnologia</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>444</guid>
+<codigo>9993</codigo>
+<nome>Biotecnologia</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>444</guid>
+<codigo>9993</codigo>
+<nome>Biotecnologia</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>475</guid>
+<codigo>9206</codigo>
+<nome>Ciência e Engenharia de Materiais (lecionado em inglês )</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>377</guid>
+<codigo>9971</codigo>
+<nome>Ciência e Tecnologia Alimentar e Nutrição</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>387</guid>
+<codigo>9972</codigo>
+<nome>Ciência Política</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Ciências Sociais, Políticas e do Território</departamento>
+<area/>
+</curso>
+<curso>
+<guid>376</guid>
+<codigo>9968</codigo>
+<nome>Ciência, Tecnologia e Gestão do Mar</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>376</guid>
+<codigo>9968</codigo>
+<nome>Ciência, Tecnologia e Gestão do Mar</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Biologia</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>376</guid>
+<codigo>9968</codigo>
+<nome>Ciência, Tecnologia e Gestão do Mar</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>376</guid>
+<codigo>9968</codigo>
+<nome>Ciência, Tecnologia e Gestão do Mar</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Geociências</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>376</guid>
+<codigo>9968</codigo>
+<nome>Ciência, Tecnologia e Gestão do Mar</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Química</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>455</guid>
+<codigo>9919</codigo>
+<nome>Ciências da Linguagem</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>458</guid>
+<codigo>9225</codigo>
+<nome>Ciências da Reabilitação</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>458</guid>
+<codigo>9225</codigo>
+<nome>Ciências da Reabilitação</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>151</guid>
+<codigo>9185</codigo>
+<nome>Ciências e Engenharia do Ambiente (lecionado em inglês)</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>441</guid>
+<codigo>9989</codigo>
+<nome>Ciências Económicas e Empresariais</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>231</guid>
+<codigo>9987</codigo>
+<nome>Contabilidade</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>1540</guid>
+<codigo>9910</codigo>
+<nome>Criação Artística</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>215</guid>
+<codigo>9988</codigo>
+<nome>Design</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>360</guid>
+<codigo>9964</codigo>
+<nome>Educação</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1700</guid>
+<codigo>9909</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1700</guid>
+<codigo>9909</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1700</guid>
+<codigo>9909</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1700</guid>
+<codigo>9909</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1700</guid>
+<codigo>9909</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1700</guid>
+<codigo>9909</codigo>
+<nome>Engenharia Biomédica</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>233</guid>
+<codigo>9947</codigo>
+<nome>Engenharia Civil</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>241</guid>
+<codigo>9938</codigo>
+<nome>Engenharia da Refinação, Petroquímica e Química</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Química</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>234</guid>
+<codigo>9951</codigo>
+<nome>Engenharia e Gestão Industrial</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>235</guid>
+<codigo>9935</codigo>
+<nome>Engenharia Eletrotécnica (lecionado em inglês)</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>180</guid>
+<codigo>9933</codigo>
+<nome>Engenharia Física</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>236</guid>
+<codigo>9934</codigo>
+<nome>Engenharia Informática (lecionado em inglês)</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>237</guid>
+<codigo>9207</codigo>
+<nome>Engenharia Mecânica</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>238</guid>
+<codigo>9914</codigo>
+<nome>Engenharia Química</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Química</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>239</guid>
+<codigo>9986</codigo>
+<nome>Estudos Culturais</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>419</guid>
+<codigo>9982</codigo>
+<nome>Estudos Literários</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>290</guid>
+<codigo>9217</codigo>
+<nome>Física - MAP-Fis (lecionado em inglês)</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Física</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>279</guid>
+<codigo>9189</codigo>
+<nome>Geociências</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Geociências</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>278</guid>
+<codigo>9994</codigo>
+<nome>Gerontologia e Geriatria</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area>Ciências e Tecnologias da Saúde</area>
+</curso>
+<curso>
+<guid>368</guid>
+<codigo>9969</codigo>
+<nome>História das Ciências e Educação Científica</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>181</guid>
+<codigo>9192</codigo>
+<nome>Informação e Comunicação em Plataformas Digitais</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>281</guid>
+<codigo>9924</codigo>
+<nome>Informática - MAP-i (lecionado em inglês)</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>474</guid>
+<codigo>9913</codigo>
+<nome>Inovação em Empresas</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Escola Doutoral</departamento>
+<area/>
+</curso>
+<curso>
+<guid>282</guid>
+<codigo>9940</codigo>
+<nome>Marketing e Estratégia (lecionado em inglês)</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>210</guid>
+<codigo>9209</codigo>
+<nome>Matemática</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Matemática</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>430</guid>
+<codigo>9980</codigo>
+<nome>Matemática Aplicada</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Matemática</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>386</guid>
+<codigo>9974</codigo>
+<nome>Materiais e Processamento Avançados</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>276</guid>
+<codigo>9937</codigo>
+<nome>Multimédia em Educação</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area>Educação</area>
+</curso>
+<curso>
+<guid>276</guid>
+<codigo>9937</codigo>
+<nome>Multimédia em Educação</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area>Educação</area>
+</curso>
+<curso>
+<guid>223</guid>
+<codigo>9953</codigo>
+<nome>Música</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>463</guid>
+<codigo>9916</codigo>
+<nome>Nanociências e Nanotecnologia</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>463</guid>
+<codigo>9916</codigo>
+<nome>Nanociências e Nanotecnologia</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>463</guid>
+<codigo>9916</codigo>
+<nome>Nanociências e Nanotecnologia</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>463</guid>
+<codigo>9916</codigo>
+<nome>Nanociências e Nanotecnologia</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>510</guid>
+<codigo>9912</codigo>
+<nome>Novos Média</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>373</guid>
+<codigo>9970</codigo>
+<nome>Políticas Públicas</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Ciências Sociais, Políticas e do Território</departamento>
+<area/>
+</curso>
+<curso>
+<guid>286</guid>
+<codigo>9188</codigo>
+<nome>Psicologia</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>285</guid>
+<codigo>9202</codigo>
+<nome>Química</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Química</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>415</guid>
+<codigo>9975</codigo>
+<nome>Química Sustentável</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>308</guid>
+<codigo>9958</codigo>
+<nome>Sistemas Energéticos e Alterações Climáticas</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>308</guid>
+<codigo>9958</codigo>
+<nome>Sistemas Energéticos e Alterações Climáticas</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>308</guid>
+<codigo>9958</codigo>
+<nome>Sistemas Energéticos e Alterações Climáticas</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>308</guid>
+<codigo>9958</codigo>
+<nome>Sistemas Energéticos e Alterações Climáticas</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>308</guid>
+<codigo>9958</codigo>
+<nome>Sistemas Energéticos e Alterações Climáticas</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>287</guid>
+<codigo>9186</codigo>
+<nome>Telecomunicações - MAP-Tele (lecionado em inglês)</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>242</guid>
+<codigo>9956</codigo>
+<nome>Território, Risco e Políticas Públicas</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>365</guid>
+<codigo>9966</codigo>
+<nome>Tradução e Terminologia</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Línguas e Culturas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>328</guid>
+<codigo>9960</codigo>
+<nome>Turismo</nome>
+<grau>Programa Doutoral</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>359</guid>
+<codigo/>
+<nome>Computação Móvel</nome>
+<grau>Curso de Formação Avançada</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>162</guid>
+<codigo/>
+<nome>Contabilidade e Auditoria</nome>
+<grau>Curso de Formação Avançada</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1530</guid>
+<codigo>5166</codigo>
+<nome>Matemática</nome>
+<grau>Curso de Formação Avançada</grau>
+<departamento>Departamento de Matemática</departamento>
+<area>Ciências Exatas e Naturais</area>
+</curso>
+<curso>
+<guid>434</guid>
+<codigo>5159</codigo>
+<nome>Tecnologias de Valorização da Biomassa Vegetal</nome>
+<grau>Curso de Formação Avançada</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>382</guid>
+<codigo>5153</codigo>
+<nome>Turismo</nome>
+<grau>Curso de Formação Avançada</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>421</guid>
+<codigo>2113</codigo>
+<nome>Automação Robótica e Informática Industrial</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1539</guid>
+<codigo>2120</codigo>
+<nome>Cibersegurança</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>395</guid>
+<codigo>2105</codigo>
+<nome>Desenvolvimento de Software</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1538</guid>
+<codigo>2119</codigo>
+<nome>Design e Comunicação Digital de Produto</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area>Artes e Humanidades</area>
+</curso>
+<curso>
+<guid>400</guid>
+<codigo>2110</codigo>
+<nome>Gestão de PME</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>422</guid>
+<codigo>2112</codigo>
+<nome>Gestão de Processos Industriais</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>404</guid>
+<codigo>2107</codigo>
+<nome>Gestão de Vendas e Marketing</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>456</guid>
+<codigo>2116</codigo>
+<nome>Informática e Comunicação Organizacional</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>401</guid>
+<codigo>2111</codigo>
+<nome>Instalações Elétricas e Automação</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>402</guid>
+<codigo>2109</codigo>
+<nome>Manutenção Industrial</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1697</guid>
+<codigo>2129</codigo>
+<nome>Metrologia e Qualidade na Indústria</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>403</guid>
+<codigo>2106</codigo>
+<nome>Programação de Sistemas de Informação</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>397</guid>
+<codigo>2104</codigo>
+<nome>Projeto de Moldes</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>391</guid>
+<codigo>2100</codigo>
+<nome>Redes e Sistemas Informáticos</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>394</guid>
+<codigo>2101</codigo>
+<nome>Sistemas Mecatrónicos e de Produção</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1699</guid>
+<codigo>2127</codigo>
+<nome>Soldadura e Construções Metálicas</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1537</guid>
+<codigo>2118</codigo>
+<nome>Técnicas e Gestão de Turismo</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area>Ciências Económicas e Sociais</area>
+</curso>
+<curso>
+<guid>1698</guid>
+<codigo>2128</codigo>
+<nome>Tecnologia de Maquinação com Controlo Numérico Computorizado (CNC)</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>420</guid>
+<codigo>2114</codigo>
+<nome>Tecnologia Mecânica</nome>
+<grau>Técnico Superior Profissional</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area>Ciências da Engenharia e Tecnologias</area>
+</curso>
+<curso>
+<guid>1570</guid>
+<codigo>6028</codigo>
+<nome>Acessibilidade Digital</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1710</guid>
+<codigo>6175</codigo>
+<nome>Algoritmos Inteligentes para Dados Industriais</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Matemática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1745</guid>
+<codigo>6189</codigo>
+<nome>Análise Financeira para Não financeiros</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1607</guid>
+<codigo>6099</codigo>
+<nome>Análise sensorial na inovação e desenvolvimento alimentar</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1711</guid>
+<codigo>6176</codigo>
+<nome>Análise, Otimização e Avaliação Comparativa de Processos Industriais e Logísticos</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Matemática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1688</guid>
+<codigo>6158</codigo>
+<nome>Análises de dados em Contabilidade</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1579</guid>
+<codigo>6022</codigo>
+<nome>Aprendizagem Automática Aplicada</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1659</guid>
+<codigo>6145</codigo>
+<nome>As voltas que a água dá num canal</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1577</guid>
+<codigo>6017</codigo>
+<nome>Autómatos Programáveis e Interface Homem-Máquina</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1742</guid>
+<codigo>6194</codigo>
+<nome>Avaliação da Segurança Sísmica de Edifícios Existentes de Betão Armado</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1741</guid>
+<codigo>6187</codigo>
+<nome>Biodiversidade e Ecologia: Ferramentas de Formação</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1721</guid>
+<codigo>6172</codigo>
+<nome>Biodiversidade e Serviços de Ecossistema em Sistemas Florestais</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1723</guid>
+<codigo>6177</codigo>
+<nome>Biometria: a próxima geração de segurança</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1747</guid>
+<codigo>6191</codigo>
+<nome>Business Intelligence e Análise de Dados em PowerBI</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1727</guid>
+<codigo>6181</codigo>
+<nome>Caracterização de Dispositivos de Microondas e Antenas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1726</guid>
+<codigo>6182</codigo>
+<nome>Circuitos DC e AC</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1604</guid>
+<codigo>6096</codigo>
+<nome>Circularidade na Cadeia de Abastecimento Alimentar</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1652</guid>
+<codigo>6121</codigo>
+<nome>Comportamento do Consumidor Digital</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1677</guid>
+<codigo>6110</codigo>
+<nome>Comportamento do Consumidor Omnicanal</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1739</guid>
+<codigo>6184</codigo>
+<nome>Comportamento e Poses de Vertebrados</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1627</guid>
+<codigo>6091</codigo>
+<nome>Comportamento Organizacional em Instituições de Saúde</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1628</guid>
+<codigo>6001</codigo>
+<nome>Composição, estrutura e propriedades dos Georecursos Cerâmicos</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1565</guid>
+<codigo>6025</codigo>
+<nome>Comunicação Estratégica para os Novos Média</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1667</guid>
+<codigo>6153</codigo>
+<nome>Construção Digital Inteligente</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1746</guid>
+<codigo>6190</codigo>
+<nome>Contabilidade e Fiscalidade para Não Financeiros</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1679</guid>
+<codigo>6116</codigo>
+<nome>Conteúdo Multimédia para Comércio Eletrónico</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1622</guid>
+<codigo>6533</codigo>
+<nome>Criação de Conteúdos Audiovisuais para Novos Média</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1587</guid>
+<codigo>6009</codigo>
+<nome>Curso de Iniciação em Soldadura</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1588</guid>
+<codigo>6008</codigo>
+<nome>Curso de Prática de Soldadura</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1672</guid>
+<codigo>6114</codigo>
+<nome>Desenho e Gestão do Ponto de Venda</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1612</guid>
+<codigo>6101</codigo>
+<nome>Desenvolvimento de Formulações de Georecursos para Aplicações Cerâmicas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1575</guid>
+<codigo>6014</codigo>
+<nome>Design de eXperiência e Inovação</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1573</guid>
+<codigo>6530</codigo>
+<nome>Design de Interação para a eXperiência</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1606</guid>
+<codigo>6098</codigo>
+<nome>Design e inovação para a sustentabilidade</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1689</guid>
+<codigo>6163</codigo>
+<nome>Desmaterialização na Contabilidade e na Auditoria</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1690</guid>
+<codigo>6164</codigo>
+<nome>Desmaterialização na prática da Auditoria</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1691</guid>
+<codigo>6165</codigo>
+<nome>Desmaterialização na prática da Contabilidade</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1668</guid>
+<codigo>6151</codigo>
+<nome>Dimensionamento de sistemas geotérmicos para edifícios mais sustentáveis</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1719</guid>
+<codigo>6170</codigo>
+<nome>Diversidade e Ecologia Animal em Sistemas Florestais - Vertebrados</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1720</guid>
+<codigo>6171</codigo>
+<nome>Diversidade e Ecologia Animal em Sistemas Florestais – Insetos e outros invertebrados</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1708</guid>
+<codigo>6169</codigo>
+<nome>Diversidade e Ecologia Vegetal em Sistemas Florestais</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1616</guid>
+<codigo>6107</codigo>
+<nome>Economia Circular</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1663</guid>
+<codigo>6146</codigo>
+<nome>Economia Circular na Construção</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1662</guid>
+<codigo>6147</codigo>
+<nome>Edifícios de Alta Eficiência Energética</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1660</guid>
+<codigo>6148</codigo>
+<nome>Edifícios Hidricamente Eficientes</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1669</guid>
+<codigo>6150</codigo>
+<nome>Edifícios Resistentes ao Fogo</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1680</guid>
+<codigo>6112</codigo>
+<nome>Estratégia de Marketing Omnicanal</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1608</guid>
+<codigo>6103</codigo>
+<nome>Estratégias Locais para Mitigação e Adaptação às Mudanças Climáticas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1671</guid>
+<codigo>6144</codigo>
+<nome>Estruturas Resilientes</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1682</guid>
+<codigo>6117</codigo>
+<nome>Experiência e Serviço Omnicanal</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1589</guid>
+<codigo>6010</codigo>
+<nome>Fabrico Aditivo e Impressão 3D</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1614</guid>
+<codigo>6108</codigo>
+<nome>Ferramentas de Gestão Ambiental</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1712</guid>
+<codigo>6167</codigo>
+<nome>Fundamentos de Aprendizagem Automática</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1713</guid>
+<codigo>6166</codigo>
+<nome>Fundamentos de Ciência de Dados</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1648</guid>
+<codigo>6140</codigo>
+<nome>Fundamentos de Ciência do Solo</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1733</guid>
+<codigo>6542</codigo>
+<nome>Geologia de Campo - Ambientes Sedimentares</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1735</guid>
+<codigo>6544</codigo>
+<nome>Geologia de Campo – Rochas Ígneas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1734</guid>
+<codigo>6543</codigo>
+<nome>Geologia de Campo – Rochas Metamórficas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1561</guid>
+<codigo>6078</codigo>
+<nome>Gestão de Informação em Ciência, Tecnologia e Inovação</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1653</guid>
+<codigo>6122</codigo>
+<nome>Gestão de Marcas na Internet</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1596</guid>
+<codigo>6087</codigo>
+<nome>Gestão de Projetos de Investigação Clínica</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1683</guid>
+<codigo>6115</codigo>
+<nome>Gestão do Comércio Eletrónico</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1630</guid>
+<codigo>6082</codigo>
+<nome>Gestão e Economia da Saúde</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1629</guid>
+<codigo>6085</codigo>
+<nome>Governação Clínica</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1566</guid>
+<codigo>6026</codigo>
+<nome>Indústrias Emergentes de Música e Gestão de Carreira</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1545</guid>
+<codigo>6080</codigo>
+<nome>Inglês para o Comércio e Comunicação Internacionais</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1605</guid>
+<codigo>6097</codigo>
+<nome>Ingredientes e soluções para a indústria alimentar</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1603</guid>
+<codigo>6095</codigo>
+<nome>Inovação e Desenvolvimento de Produtos Alimentares</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1681</guid>
+<codigo>6119</codigo>
+<nome>Inovação e Tecnologia de Marketing</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1597</guid>
+<codigo>6088</codigo>
+<nome>Inovação em Saúde</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1670</guid>
+<codigo>6154</codigo>
+<nome>Inspeção e diagnóstico de edifícios e infraestruturas existentes</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1728</guid>
+<codigo>6183</codigo>
+<nome>Instrumentação e Medidas em Microondas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1748</guid>
+<codigo>6193</codigo>
+<nome>Inteligência Artificial Generativa em Marketing Digital</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1631</guid>
+<codigo>6534</codigo>
+<nome>Interfaces de Realidade Virtual</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1632</guid>
+<codigo>6535</codigo>
+<nome>Interfaces Web com JavaScript</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1736</guid>
+<codigo>6185</codigo>
+<nome>Introdução à Gemologia</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1555</guid>
+<codigo>65075</codigo>
+<nome>Introdução à Realidade Virtual e Aumentada</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1709</guid>
+<codigo>6174</codigo>
+<nome>Introdução à visão computacional com PyTorch</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Matemática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1633</guid>
+<codigo>6536</codigo>
+<nome>Jogos Sérios</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1592</guid>
+<codigo>6081</codigo>
+<nome>Liderança Estratégica e Recursos Humanos na Saúde</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1684</guid>
+<codigo>6118</codigo>
+<nome>Logística e Distribuição Omnicanal</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1685</guid>
+<codigo>6113</codigo>
+<nome>Marca e Proposta de Valor Omnicanal</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1654</guid>
+<codigo>6125</codigo>
+<nome>Marketing de Conteúdo</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1655</guid>
+<codigo>6128</codigo>
+<nome>Marketing nos Média Sociais</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1658</guid>
+<codigo>6130</codigo>
+<nome>Marketing Sensorial</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1646</guid>
+<codigo>6141</codigo>
+<nome>Metodologias de análise de solos</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1656</guid>
+<codigo>6129</codigo>
+<nome>Métricas e Resultados em Marketing Digital</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1590</guid>
+<codigo>6011</codigo>
+<nome>Metrologia 3D</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1615</guid>
+<codigo>6109</codigo>
+<nome>Minimização dos impactos ambientais negativos de uma agricultura sustentável</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1569</guid>
+<codigo>6016</codigo>
+<nome>Modelação CAD paramétrica e direta</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1591</guid>
+<codigo>6012</codigo>
+<nome>Modelação e Simulação para a Indústria</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1611</guid>
+<codigo>6106</codigo>
+<nome>Monitorização e Modelação da Qualidade da Água</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1598</guid>
+<codigo>6089</codigo>
+<nome>Novas Tecnologias de Apoio à Decisão Clínica</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1740</guid>
+<codigo>6188</codigo>
+<nome>Observação, Estudo e Conservação das Aves</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1600</guid>
+<codigo>6092</codigo>
+<nome>Operações e Logística no Setor da Saúde</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1649</guid>
+<codigo>6100</codigo>
+<nome>Oportunidades e Desafios para os Alimentos Embalados</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1650</guid>
+<codigo>6532</codigo>
+<nome>Perceção Multissensorial de Alimentos</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Educação e Psicologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1657</guid>
+<codigo>6123</codigo>
+<nome>Planeamento de Marketing Digital</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1599</guid>
+<codigo>6090</codigo>
+<nome>Planeamento em Saúde</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1673</guid>
+<codigo>6124</codigo>
+<nome>Plataformas Próprias de Marketing Digital</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1562</guid>
+<codigo>6079</codigo>
+<nome>Política e Instrumentos de Ciência, Tecnologia e Inovação</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1571</guid>
+<codigo>6029</codigo>
+<nome>Pós-Produção Audiovisual e Efeitos Visuais</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1634</guid>
+<codigo>6537</codigo>
+<nome>Produção Audiovisual Digital para Ficção/Não Ficção</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1580</guid>
+<codigo>6002</codigo>
+<nome>Programa de Formação em Proteção e Segurança Radiológica (Conducente ao Nível 2 de Qualificação)</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1580</guid>
+<codigo>6002</codigo>
+<nome>Programa de Formação em Proteção e Segurança Radiológica (Conducente ao Nível 2 de Qualificação)</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1581</guid>
+<codigo>6018</codigo>
+<nome>Programa de Formação em Proteção e Segurança Radiológica (Conducente ao Nível 3 de Qualificação) – Domínio Industrial – Fontes Não Seladas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1584</guid>
+<codigo>6024</codigo>
+<nome>Programa de Formação em Proteção e Segurança Radiológica (Conducente ao Nível 3 de Qualificação) – Domínio Médico – Equipamentos de Radiodiagnóstico</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1584</guid>
+<codigo>6024</codigo>
+<nome>Programa de Formação em Proteção e Segurança Radiológica (Conducente ao Nível 3 de Qualificação) – Domínio Médico – Equipamentos de Radiodiagnóstico</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1583</guid>
+<codigo>6023</codigo>
+<nome>Programa de Formação em Proteção e Segurança Radiológica (Conducente ao Nível 3 de Qualificação) – Domínio Médico – Fontes Não Seladas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1583</guid>
+<codigo>6023</codigo>
+<nome>Programa de Formação em Proteção e Segurança Radiológica (Conducente ao Nível 3 de Qualificação) – Domínio Médico – Fontes Não Seladas</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1582</guid>
+<codigo>6020</codigo>
+<nome>Programa de Formação em Proteção e Segurança Radiológica (Nível 3 de Qualificação) – Domínio Industrial – Geradores de Raios-X e Fontes Seladas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1568</guid>
+<codigo>6013</codigo>
+<nome>Programação CAM - Estratégias de Maquinação a 2, 3 e 5 Eixos</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1724</guid>
+<codigo>6180</codigo>
+<nome>Programação em Python para análise de dados</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1725</guid>
+<codigo>6179</codigo>
+<nome>Programação por objetos (POO) em C++</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Eletrónica, Telecomunicações e Informática</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1560</guid>
+<codigo>6077</codigo>
+<nome>Propriedade Intelectual e Licenciamento</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1664</guid>
+<codigo>6149</codigo>
+<nome>Proteção Costeira</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1609</guid>
+<codigo>6104</codigo>
+<nome>Proteção de Solos Agrícolas: Prevenção e Recuperação de Solos Degradados</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1572</guid>
+<codigo>6030</codigo>
+<nome>Prototipagem de Produtos Interativos</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1675</guid>
+<codigo>6127</codigo>
+<nome>Publicidade e Marketing de Influência</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1647</guid>
+<codigo>6142</codigo>
+<nome>Qualidade dos Solos</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1594</guid>
+<codigo>6084</codigo>
+<nome>Qualidade em Saúde</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1578</guid>
+<codigo>6021</codigo>
+<nome>Receção e Atendimento</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior de Tecnologia e Gestão de Águeda</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1692</guid>
+<codigo>6162</codigo>
+<nome>Recolha e análise de dados em Auditoria</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1613</guid>
+<codigo>6102</codigo>
+<nome>Requisitos e Especificações de Georecursos para Aplicações Cerâmicas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1574</guid>
+<codigo>6019</codigo>
+<nome>Robótica Industrial</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1593</guid>
+<codigo>6083</codigo>
+<nome>Saúde Populacional</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ciências Médicas</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1595</guid>
+<codigo>6086</codigo>
+<nome>Sistemas e Políticas de Saúde</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior de Saúde</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1687</guid>
+<codigo>6157</codigo>
+<nome>Start for Future - LEARN</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1687</guid>
+<codigo>6157</codigo>
+<nome>Start for Future - LEARN</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Mecânica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1635</guid>
+<codigo>6538</codigo>
+<nome>Storytelling Digital</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1637</guid>
+<codigo>6539</codigo>
+<nome>Técnicas Contemporâneas de Composição e Arranjo em Jazz</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1636</guid>
+<codigo>6131</codigo>
+<nome>Técnicas Contemporâneas de Songwriting</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1638</guid>
+<codigo>6132</codigo>
+<nome>Técnicas de Armazenamento Digital de Som e Imagem</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1564</guid>
+<codigo>6007</codigo>
+<nome>Técnicas de Caracterização Avançada de Materiais</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1676</guid>
+<codigo>6126</codigo>
+<nome>Técnicas de criação de conteúdos multimédia</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1639</guid>
+<codigo>6133</codigo>
+<nome>Técnicas de Digitalização de Fonogramas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1644</guid>
+<codigo>6138</codigo>
+<nome>Técnicas de Digitalização de Imagem em Movimento</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1567</guid>
+<codigo>6027</codigo>
+<nome>Técnicas de Estúdio para Mistura e Masterização de Som</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1737</guid>
+<codigo>6186</codigo>
+<nome>Técnicas de Lapidação de Gemas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Geociências</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1552</guid>
+<codigo>65005</codigo>
+<nome>Técnicas de Manufatura Aditiva e Design para a Manufatura Aditiva</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1640</guid>
+<codigo>6134</codigo>
+<nome>Técnicas de Produção de Música Eletrónica</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1641</guid>
+<codigo>6135</codigo>
+<nome>Técnicas Fotográficas Digitais</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1623</guid>
+<codigo>6031</codigo>
+<nome>Tecnologia Laser</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Física</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1643</guid>
+<codigo>6137</codigo>
+<nome>Tecnologias de Captação de Som em Campo</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1642</guid>
+<codigo>6136</codigo>
+<nome>Tecnologias de Gravação de Som em Estúdio</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1666</guid>
+<codigo>6152</codigo>
+<nome>Tecnologias Digitais de Apoio ao Projeto, Execução e Operação</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia Civil</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1563</guid>
+<codigo>6005</codigo>
+<nome>Tecnologias e Recursos Bioplásticos</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Engenharia de Materiais e Cerâmica</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1693</guid>
+<codigo>6161</codigo>
+<nome>Tecnologias emergentes e as organizações</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1694</guid>
+<codigo>6160</codigo>
+<nome>Tecnologias emergentes na Contabilidade e na Auditoria</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1651</guid>
+<codigo>6531</codigo>
+<nome>Tecnologias Inovadoras de Conservação e Modificação de Alimentos</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Química</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1559</guid>
+<codigo>6076</codigo>
+<nome>Transferência de Tecnologia e Criação de Empresas</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Economia, Gestão, Engenharia Industrial e Turismo</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1695</guid>
+<codigo>6159</codigo>
+<nome>Transformação digital e os processos de negócio</nome>
+<grau>Microcredencial</grau>
+<departamento>Instituto Superior de Contabilidade e Administração da Universidade de Aveiro</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1645</guid>
+<codigo>6139</codigo>
+<nome>User Interfaces para Web com React</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Comunicação e Arte</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1610</guid>
+<codigo>6105</codigo>
+<nome>Uso Ambientalmente Sustentável de Pesticidas e Fertilizantes</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Ambiente e Ordenamento</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1722</guid>
+<codigo>6173</codigo>
+<nome>Utilização de substâncias bioativas em contexto de produção animal</nome>
+<grau>Microcredencial</grau>
+<departamento>Departamento de Biologia</departamento>
+<area/>
+</curso>
+<curso>
+<guid>1576</guid>
+<codigo>6015</codigo>
+<nome>Visão Artificial</nome>
+<grau>Microcredencial</grau>
+<departamento>Escola Superior Aveiro Norte</departamento>
+<area/>
+</curso>
+</cursos>
