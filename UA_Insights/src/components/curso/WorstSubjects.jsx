@@ -106,10 +106,10 @@ const WorstSubjects = () => {
           </div>
 
           <div className="flex-grow">
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height="99%">
               <BarChart
                 data={data[currentYear] || []}
-                margin={{ top: 20, right: 30, left: 40, bottom: 40 }}
+                margin={{ top: 0, right: 30, left: 40, bottom: 0 }}
                 barSize={40}
               >
                 <CartesianGrid strokeDasharray="3 3" />

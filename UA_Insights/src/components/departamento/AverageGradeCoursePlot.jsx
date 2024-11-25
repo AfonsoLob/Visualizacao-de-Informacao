@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer, Tooltip } from 'recharts';
 import { useData } from "../../context/DataContext";
 import { useFilters } from "../../context/FilterContext";
+import { useCourseMapping } from '../../context/courseContext';
 import { Oval } from 'react-loader-spinner';
 import * as d3 from "d3";
 
@@ -10,6 +11,7 @@ const AverageGradeCoursePlot = () => {
   const { filters } = useFilters();
   const selectedDepartment = filters.Departamento?.value;
   const [currentYear, setCurrentYear] = useState(null);
+  const courseMapping = useCourseMapping();
 
   const { data, years } = useMemo(() => {
     if (!rawData.length || !selectedDepartment) return { data: {}, years: [] };
@@ -31,10 +33,15 @@ const AverageGradeCoursePlot = () => {
     yearData.forEach((records, year) => {
       const courseAverages = Array.from(
         d3.group(records, d => d.icursocod),
-        ([course, grades]) => ({
-          course,
-          average: d3.mean(grades.map(g => +g.nota)).toFixed(2)
-        })
+        ([course, grades]) => {
+          const courseName = courseMapping[course]?.nome || course;
+          const formattedCourseName = courseName.split(' ').length > 1 ? courseName.split(' ').map(word => word.length > 3 ? word.charAt(0).toUpperCase() : '').join('')
+          : courseName;
+          return {
+        course: formattedCourseName,
+        average: d3.mean(grades.map(g => +g.nota)).toFixed(2)
+          };
+        }
       );
       processedData[year] = courseAverages;
     });
@@ -81,7 +88,7 @@ const AverageGradeCoursePlot = () => {
                 <PolarAngleAxis
                   dataKey="course"
                   stroke="#ffffff"
-                  tick={{ fill: '#ffffff' }}
+                  tick={{ fill: '#ffffff'}}
                 />
                 <PolarRadiusAxis
                   angle={90}
