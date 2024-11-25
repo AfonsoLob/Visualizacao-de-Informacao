@@ -30,7 +30,7 @@ const ChartContainer = ({ children, title, id, activeChart, setActiveChart }) =>
 >
   <button
     onClick={toggleMaximize}
-    className="absolute bottom-2 right-2 p-2 rounded-full hover:bg-gray-600 transition-colors duration-200"
+    className="z-10 absolute bottom-2 right-2 p-2 rounded-full bg-gray-600 hover:bg-gray-500 hover:border-white transition-colors duration-200"
   >
     {activeChart === id ? (
       <FaMinimize className="w-5 h-5" />
