@@ -61,5 +61,5 @@ Foram utilizados dados, que não poderão ser partilhados por fins de proteção
    npm install
 ---
 ## **Autores**
-- ### Afonso Baixo [GitHub](https://github.com/AfonsoLob)
-- ### Daniel Emídio [GitHub](https://github.com/DanielEmdio)
+- Afonso Baixo [GitHub](https://github.com/AfonsoLob)
+- Daniel Emídio [GitHub](https://github.com/DanielEmdio)
