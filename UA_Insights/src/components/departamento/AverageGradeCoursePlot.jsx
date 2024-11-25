@@ -35,8 +35,13 @@ const AverageGradeCoursePlot = () => {
         d3.group(records, d => d.icursocod),
         ([course, grades]) => {
           const courseName = courseMapping[course]?.nome || course;
-          const formattedCourseName = courseName.split(' ').length > 1 ? courseName.split(' ').map(word => word.length > 3 ? word.charAt(0).toUpperCase() : '').join('')
-          : courseName;
+            const formattedCourseName = courseName.split(' ').length > 1 
+            ? courseName.split(' ').map(word => 
+              word.length > 3 && /^[a-zA-Z]/.test(word.charAt(0)) 
+                ? word.charAt(0).toUpperCase() 
+                : ''
+              ).join('')
+            : courseName;
           return {
         course: formattedCourseName,
         average: d3.mean(grades.map(g => +g.nota)).toFixed(2)
