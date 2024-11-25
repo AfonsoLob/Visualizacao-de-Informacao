@@ -10,9 +10,24 @@ const AverageGrade = () => {
     const selectedCurso = filters.Curso?.value;
     const yearRange = filters.years;
     const svgRef = useRef();
+    const containerRef = useRef();
+    const [containerWidth, setContainerWidth] = useState(0);
     const { rawData, loading: dataLoading } = useData();
 
-    // Data processing useEffect now depends on both selectedCurso and yearRange
+    // Handle responsiveness
+    const updateContainerWidth = () => {
+        if (containerRef.current) {
+            setContainerWidth(containerRef.current.offsetWidth);
+        }
+    };
+
+    useEffect(() => {
+        updateContainerWidth(); // Set initial width
+        window.addEventListener("resize", updateContainerWidth); // Update on resize
+        return () => window.removeEventListener("resize", updateContainerWidth);
+    }, []);
+
+    // Data processing useEffect
     useEffect(() => {
         if (!selectedCurso || dataLoading) return;
         const processChartData = async () => {
@@ -52,11 +67,13 @@ const AverageGrade = () => {
     }, [selectedCurso, yearRange]); // Added yearRange to dependencies
 
     useEffect(() => {
-        if (!data.length) return;
+        if (!data.length || !containerWidth) return;
+
+        const containerHeight = 280;
 
         const margin = { top: 20, right: 30, bottom: 50, left: 40 };
-        const width = 600 - margin.left - margin.right;
-        const height = 280 - margin.top - margin.bottom;
+        const width = containerWidth - margin.left - margin.right;
+        const height = containerHeight - margin.top - margin.bottom;
 
         d3.select(svgRef.current).selectAll("*").remove();
         d3.selectAll(".tooltip").remove();
@@ -72,8 +89,7 @@ const AverageGrade = () => {
             .style("opacity", 0);
 
         const svg = d3.select(svgRef.current)
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
+            .attr("viewBox", `0 0 ${containerWidth} ${containerHeight}`)
             .append("g")
             .attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -167,7 +183,7 @@ const AverageGrade = () => {
             .attr("color", "white")
             .call(d3.axisLeft(y));
 
-    }, [data]);
+    }, [data, containerWidth]);
 
     return (
         <>
@@ -178,21 +194,18 @@ const AverageGrade = () => {
                             height={80}
                             width={80}
                             color="#4fa94d"
-                            wrapperStyle={{}}
-                            wrapperClass=""
                             visible={true}
                             ariaLabel='oval-loading'
                             secondaryColor="#4fa94d"
                             strokeWidth={2}
                             strokeWidthSecondary={2}
-
                         />
                     </div>
                 </div>
             ) : (
-                <div>
-                <h2 className="mb-4 text-xl font-semibold">Média anual</h2>
-                        <svg ref={svgRef}></svg>
+                <div ref={containerRef} className="w-full h-auto">
+                    <h2 className="mb-4 text-xl font-semibold">Média anual</h2>
+                    <svg ref={svgRef}></svg>
                 </div>
             )}
         </>

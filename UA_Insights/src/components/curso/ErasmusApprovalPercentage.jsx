@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import * as d3 from "d3";
 import { useFilters } from "../../context/FilterContext";
 import { Oval } from 'react-loader-spinner';
@@ -73,22 +73,24 @@ return (
                 </div>
                 </div>
               ) : (
-                <div>
+                <div className="w-full">
                 <h2 className="mb-4 text-xl font-semibold">Internos VS Erasmus</h2>
-                <BarChart
-                        width={700}
-                        height={250}
-                        data={data}
-                        margin={{ top: 10, right: 30, left: 10, bottom: 0 }}
-                >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="year" stroke="#ffffff" />
-                        <YAxis stroke="#ffffff" />
-                        <Tooltip contentStyle={{ backgroundColor: '#2d3448' }} />
-                        <Legend />
-                        <Bar dataKey="percentageNaoMobilidade" fill="#68e713" name="Internos" />
-                        <Bar dataKey="percentageMobilidade" fill="#8884d8" name="Erasmus" />
-                </BarChart>
+                <ResponsiveContainer width="100%" height={350}>
+                    <BarChart
+                            width={700}
+                            height={250}
+                            data={data}
+                            margin={{ top: 10, right: 30, left: 0, bottom: 10 }}
+                    >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="year" stroke="#ffffff" />
+                            <YAxis stroke="#ffffff" />
+                            <Tooltip contentStyle={{ backgroundColor: '#2d3448' }} />
+                            <Legend />
+                            <Bar dataKey="percentageNaoMobilidade" fill="#68e713" name="Internos" />
+                            <Bar dataKey="percentageMobilidade" fill="#8884d8" name="Erasmus" />
+                    </BarChart>
+                </ResponsiveContainer>
                 </div>
             )}
         </>
