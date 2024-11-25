@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from "react";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Legend } from "recharts";
+import { ComposedChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Legend, Line } from "recharts";
 import { useFilters } from "../../context/FilterContext";
 import { useCourseMapping } from "../../context/courseContext";
 import { useData } from "../../context/DataContext";
@@ -42,10 +42,12 @@ const DepartmentStudents = () => {
           (d) => d.icursocod
         );
 
+        const totalStudents = new Set(records.map((d) => d.id_estudante)).size;
+
         return {
           year,
           ...Object.fromEntries(courseCounts),
-          total: new Set(records.map((d) => d.id_estudante)).size,
+          total: totalStudents,
         };
       }).sort((a, b) => a.year - b.year);
     };
@@ -59,11 +61,58 @@ const DepartmentStudents = () => {
 
   const { licenciaturaData, mestradoData, integradoData } = processedData;
 
+  const renderChart = (data, courses) => (
+    <ResponsiveContainer width="100%" height={350}>
+      <ComposedChart
+        data={data}
+        margin={{ top: 10, right: 30, left: 0, bottom: 40 }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="year" stroke="#ffffff" />
+        <YAxis stroke="#ffffff" />
+        <Tooltip 
+          contentStyle={{ backgroundColor: "#2d3448", color: "#fff" }}
+          formatter={(value, name) => {
+            if (name === "Total") return [value, "Total"];
+            return [value, name];
+          }}
+        />
+        <Legend />
+        {courses
+          .filter((key) => key !== "year" && key !== "total")
+          .map((course, index) => {
+            const courseDetails = courseMapping[course];
+            const words = courseDetails ? courseDetails.nome.split(' ') : [];
+            const label = words.length > 1
+              ? words.map(word => word.length > 3 ? word.charAt(0) : '').join('')
+              : courseDetails ? courseDetails.nome : course;
+
+            return (
+              <Bar
+                key={course}
+                dataKey={course}
+                name={label}
+                stackId="1"
+                fill={`hsl(${index * 40}, 70%, 50%)`}
+              />
+            );
+          })}
+        <Line
+          type="monotone"
+          dataKey="total"
+          name="Total"
+          stroke="#ffffff"
+          strokeWidth={2}
+          dot={{ fill: '#000000', stroke: '#ffffff', r: 4 }}
+        />
+      </ComposedChart>
+    </ResponsiveContainer>
+  );
+
   return (
     <div style={{ width: "100%", height: 400 }}>
-      <h2>Número de Alunos no Departamento</h2>
+      <h2 className="text-xl font-bold my-1">Número de Alunos no Departamento</h2>
 
-      {/* Buttons for toggling */}
       <div style={{ marginBottom: "20px", display: "flex", justifyContent: "center" }}>
         <button
           onClick={() => setActiveChart("Licenciaturas")}
@@ -109,107 +158,17 @@ const DepartmentStudents = () => {
         </button>
       </div>
 
-      {/* Conditionally render the active chart */}
-      {activeChart === "Licenciaturas" && (
-        <ResponsiveContainer width="100%" height={350}>
-          <BarChart
-            data={licenciaturaData}
-            margin={{ top: 10, right: 30, left: 0, bottom: 40 }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="year" stroke="#ffffff" />
-            <YAxis stroke="#ffffff" />
-            <Tooltip contentStyle={{ backgroundColor: "#2d3448", color: "#fff" }} />
-            <Legend />
-            {Array.from(new Set(licenciaturaData.flatMap(Object.keys)))
-              .filter((key) => key !== "year")
-              .map((course, index) => {
-                const courseDetails = courseMapping[course];
-                const words = courseDetails ? courseDetails.nome.split(' ') : [];
-                const label = words.length > 1
-                  ? words.map(word => word.length > 3 ? word.charAt(0) : '').join('')
-                  : courseDetails ? courseDetails.nome : course;
-
-                return (
-                  <Bar
-                    key={course}
-                    dataKey={course}
-                    name={label} // Custom label for the legend
-                    stackId="1"
-                    fill={`hsl(${index * 40}, 70%, 50%)`}
-                  />
-                );
-              })}
-          </BarChart>
-        </ResponsiveContainer>
+      {activeChart === "Licenciaturas" && renderChart(
+        licenciaturaData,
+        Array.from(new Set(licenciaturaData.flatMap(Object.keys)))
       )}
-
-      {activeChart === "Mestrados" && (
-        <ResponsiveContainer width="100%" height={350}>
-          <BarChart
-            data={mestradoData}
-            margin={{ top: 10, right: 30, left: 0, bottom: 40 }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="year" stroke="#ffffff" />
-            <YAxis stroke="#ffffff" />
-            <Tooltip contentStyle={{ backgroundColor: "#2d3448", color: "#fff" }} />
-            <Legend />
-            {Array.from(new Set(mestradoData.flatMap(Object.keys)))
-              .filter((key) => key !== "year")
-              .map((course, index) => {
-                const courseDetails = courseMapping[course];
-                const words = courseDetails ? courseDetails.nome.split(' ') : [];
-                const label = words.length > 1
-                  ? words.map(word => word.length > 3 ? word.charAt(0) : '').join('')
-                  : courseDetails ? courseDetails.nome : course;
-
-                return (
-                  <Bar
-                    key={course}
-                    dataKey={course}
-                    name={label} // Custom label for the legend
-                    stackId="1"
-                    fill={`hsl(${index * 40}, 70%, 50%)`}
-                  />
-                );
-              })}
-          </BarChart>
-        </ResponsiveContainer>
+      {activeChart === "Mestrados" && renderChart(
+        mestradoData,
+        Array.from(new Set(mestradoData.flatMap(Object.keys)))
       )}
-
-      {activeChart === "Integrados" && (
-        <ResponsiveContainer width="100%" height={350}>
-          <BarChart
-            data={integradoData}
-            margin={{ top: 10, right: 30, left: 0, bottom: 40 }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="year" stroke="#ffffff" />
-            <YAxis stroke="#ffffff" />
-            <Tooltip contentStyle={{ backgroundColor: "#2d3448", color: "#fff" }} />
-            <Legend />
-            {Array.from(new Set(integradoData.flatMap(Object.keys)))
-              .filter((key) => key !== "year")
-              .map((course, index) => {
-                const courseDetails = courseMapping[course];
-                const words = courseDetails ? courseDetails.nome.split(' ') : [];
-                const label = words.length > 1
-                  ? words.map(word => word.length > 3 ? word.charAt(0) : '').join('')
-                  : courseDetails ? courseDetails.nome : course;
-
-                return (
-                  <Bar
-                    key={course}
-                    dataKey={course}
-                    name={label} // Custom label for the legend
-                    stackId="1"
-                    fill={`hsl(${index * 40}, 70%, 50%)`}
-                  />
-                );
-              })}
-          </BarChart>
-        </ResponsiveContainer>
+      {activeChart === "Integrados" && renderChart(
+        integradoData,
+        Array.from(new Set(integradoData.flatMap(Object.keys)))
       )}
     </div>
   );

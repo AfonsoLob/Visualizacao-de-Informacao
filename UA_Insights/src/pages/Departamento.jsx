@@ -1,6 +1,7 @@
 import { useFilters } from "../context/FilterContext";
 import DepartmentAverageGrade from "../components/departamento/DepartmentAverageGrade";
 import DepartmentStudents from "../components/departamento/DepartmentStudents";
+import AverageGradeCoursePlot from "../components/departamento/AverageGradeCoursePlot";
 
 const Curso = () => {
   
@@ -19,13 +20,10 @@ const Curso = () => {
             <DepartmentAverageGrade/>
         </div>
         <div className="w-full h-[400px] border border-lightgray rounded-lg p-1.5 bg-[#f9f9f9] flex flex-col items-center justify-center text-white" style={{ backgroundColor: '#2d3748' }}>
+          <AverageGradeCoursePlot/>
+        </div>
+        <div className="col-span-2 w-full h-[430px] border border-lightgray rounded-lg p-2 bg-[#f9f9f9] flex flex-col items-center justify-center text-white" style={{ backgroundColor: '#2d3748' }}>
             <DepartmentStudents/>
-        </div>
-        <div className="w-full h-[400px] border border-lightgray rounded-lg p-1.5 bg-[#f9f9f9] flex flex-col items-center justify-center text-white" style={{ backgroundColor: '#2d3748' }}>
-            <h2>TO DO</h2>
-        </div>
-        <div className="w-full h-[400px] border border-lightgray rounded-lg p-1.5 bg-[#f9f9f9] flex flex-col items-center justify-center text-white" style={{ backgroundColor: '#2d3748' }}>
-            <h2>TO DO</h2>
         </div>
       </div>
       )}
