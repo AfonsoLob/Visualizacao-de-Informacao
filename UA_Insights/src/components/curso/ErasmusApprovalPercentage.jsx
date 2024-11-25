@@ -53,47 +53,47 @@ const ErasmusApprovalPercentage = () => {
     }, [selectedCurso, yearRange]);
 
 return (
-        <>
-            {dataLoading ? (
-                <div className="flex flex-col items-center w-full h-full p-2">
-                <div className="flex-1 w-full flex items-center justify-center">
-                    <Oval
-                        height={80}
-                        width={80}
-                        color="#4fa94d"
-                        wrapperStyle={{}}
-                        wrapperClass=""
-                        visible={true}
-                        ariaLabel='oval-loading'
-                        secondaryColor="#4fa94d"
-                        strokeWidth={2}
-                        strokeWidthSecondary={2}
+    <>
+        {dataLoading ? (
+        <div className="flex flex-col items-center w-full h-full p-2">
+        <div className="flex-1 w-full flex items-center justify-center">
+            <Oval
+            height={80}
+            width={80}
+            color="#4fa94d"
+            wrapperStyle={{}}
+            wrapperClass=""
+            visible={true}
+            ariaLabel='oval-loading'
+            secondaryColor="#4fa94d"
+            strokeWidth={2}
+            strokeWidthSecondary={2}
 
-                    />
-                </div>
-                </div>
-              ) : (
-                <div className="w-full">
-                <h2 className="mb-4 text-xl font-semibold">Internos VS Erasmus</h2>
-                <ResponsiveContainer width="100%" height={350}>
-                    <BarChart
-                            width={700}
-                            height={250}
-                            data={data}
-                            margin={{ top: 10, right: 30, left: 0, bottom: 10 }}
-                    >
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="year" stroke="#ffffff" />
-                            <YAxis stroke="#ffffff" />
-                            <Tooltip contentStyle={{ backgroundColor: '#2d3448' }} />
-                            <Legend />
-                            <Bar dataKey="percentageNaoMobilidade" fill="#68e713" name="Internos" />
-                            <Bar dataKey="percentageMobilidade" fill="#8884d8" name="Erasmus" />
-                    </BarChart>
-                </ResponsiveContainer>
-                </div>
-            )}
-        </>
+            />
+        </div>
+        </div>
+          ) : (
+        <div className="w-full">
+        <h2 className="mb-4 mt-10 text-xl font-semibold">Aprovação de Internos VS Erasmus</h2>
+        <ResponsiveContainer width="100%" height={350}>
+            <BarChart
+                width={700}
+                height={200}
+                data={data}
+                margin={{ top: 10, right: 30, left: 0, bottom: 40 }}
+            >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="year" stroke="#ffffff" />
+                <YAxis stroke="#ffffff" />
+                <Tooltip contentStyle={{ backgroundColor: '#2d3448' }}  formatter={(value) => `${value} %`}/>
+                <Legend />
+                <Bar dataKey="percentageNaoMobilidade" fill="#68e713" name="Internos" />
+                <Bar dataKey="percentageMobilidade" fill="#8884d8" name="Erasmus" />
+            </BarChart>
+        </ResponsiveContainer>
+        </div>
+        )}
+    </>
     );
 };
 

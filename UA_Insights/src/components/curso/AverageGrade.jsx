@@ -100,7 +100,7 @@ const AverageGrade = () => {
 
         const y = d3.scaleLinear()
             .range([height, 0])
-            .domain([10, 20]);
+            .domain([0, 20]);
 
         svg.selectAll("g.box")
             .data(data)
