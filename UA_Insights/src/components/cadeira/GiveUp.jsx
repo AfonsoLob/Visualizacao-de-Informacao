@@ -104,6 +104,10 @@ const GiveUp = () => {
                 orientation="right"
                 stroke="#ffffff"
                 label={{ value: 'Percentagem (%)', angle: 90, position: 'insideRight' }}
+                domain={[
+                  Math.min(...data.map(d => parseFloat(d.percentage))),
+                  Math.max(...data.map(d => parseFloat(d.percentage)))
+                ]}
               />
               <Tooltip content={<CustomTooltip />} />
               <Legend />
