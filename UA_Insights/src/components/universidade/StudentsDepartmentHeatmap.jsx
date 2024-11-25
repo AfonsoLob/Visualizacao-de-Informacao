@@ -63,7 +63,7 @@ const StudentsDepartmentHeatmap = () => {
   useEffect(() => {
     if (!processedData.length) return;
 
-    const margin = { top: 20, right: 20, bottom: 30, left: 60 };
+    const margin = { top: 20, right: 100, bottom: 30, left: 60 };
     const width = containerWidth - margin.left - margin.right;
     const height = 300;
 
@@ -91,9 +91,10 @@ const StudentsDepartmentHeatmap = () => {
       .domain(departments)
       .padding(0.05);
 
+    const maxCount = d3.max(processedData, d => d.count);
     const color = d3.scaleSequential()
       .interpolator(d3.interpolateYlOrRd)
-      .domain([0, d3.max(processedData, d => d.count)]);
+      .domain([0, maxCount]);
 
     // Add tooltip div after svg setup
     const tooltip = d3.select("body").append("div")
@@ -131,7 +132,7 @@ const StudentsDepartmentHeatmap = () => {
            Estudantes: ${d.count}<br/>
            Percentagem: ${d.percentage}%`
         )
-        .style("left", (event.pageX - tooltip.node().offsetWidth - 10) + "px") // Position left of cursor
+        .style("left", (event.pageX - tooltip.node().offsetWidth - 10) + "px")
         .style("top", (event.pageY - 28) + "px");
     })
     .on("mouseout", (event) => {
@@ -139,9 +140,59 @@ const StudentsDepartmentHeatmap = () => {
         .style("stroke", "none");
       
       tooltip.transition()
-        .duration(500)
-        .style("opacity", 0);
+        .duration(200)
+        .style("opacity", 0)
+        .on("end", () => {
+          tooltip.style("top", "-100px")
+            .style("left", "-100px");
+        });
     });
+
+    // Add color legend
+    const legendWidth = 20;
+    const legendHeight = height;
+    const legendSteps = 10;
+
+    const maxPercentage = d3.max(processedData, d => parseFloat(d.percentage));
+    const legendScale = d3.scaleLinear()
+      .domain([0, Math.ceil(maxPercentage)])
+      .range([legendHeight, 0]);
+      const legendAxis = d3.axisRight(legendScale)
+        .ticks(6)
+        .tickFormat(d => `${d}%`);
+
+    const legend = svg.append("g")
+      .attr("transform", `translate(${width + 10}, 0)`);
+
+    // Create color gradient
+    const legendGradient = legend.append("defs")
+      .append("linearGradient")
+      .attr("id", "legend-gradient")
+      .attr("x1", "0%")
+      .attr("y1", "100%")
+      .attr("x2", "0%")
+      .attr("y2", "0%");
+
+    legendGradient.selectAll("stop")
+      .data(color.ticks(legendSteps).map((t, i, arr) => ({
+      offset: `${(i / (arr.length - 1)) * 100}%`,
+      color: color(t)
+      })))
+      .enter()
+      .append("stop")
+      .attr("offset", d => d.offset)
+      .attr("stop-color", d => d.color);
+
+    // Add color gradient rectangle
+    legend.append("rect")
+      .attr("width", legendWidth)
+      .attr("height", legendHeight)
+      .style("fill", "url(#legend-gradient)");
+
+    // Add legend axis
+    legend.append("g")
+      .call(legendAxis)
+      .attr("transform", `translate(${legendWidth}, 0)`);
 
     // Add axes
     svg.append("g")
