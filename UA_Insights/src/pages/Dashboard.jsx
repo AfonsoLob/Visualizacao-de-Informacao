@@ -17,7 +17,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      /* Stats Cards */}
+      {/* /* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4 place-items-center">
           <div className="stat bg-gray-800 text-white rounded-xl text-center w-full">
             <div className="stat-title">Alunos</div>
