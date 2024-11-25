@@ -79,7 +79,7 @@ const ApprovalByExamType = () => {
         </div>
       ) : (
         <div className="w-full">
-          <h3>Evolução de Aprovados por Tipo de Exame</h3>
+          <h3 className="text-lg font-bold">Evolução de Aprovados por Tipo de Exame</h3>
 
           <ResponsiveContainer width="100%" height={350}>
             <LineChart data={chartData} margin={{ top: 20, right: 30, left: 0, bottom: 30 }}>

@@ -36,7 +36,7 @@ const StudentsAreaChart = () => {
 
   return (
     <div className="w-full">
-      <h3>Estudantes / Ano</h3>
+      <h3 className="text-xl mb-2 font-bold">Estudantes / Ano</h3>
       <ResponsiveContainer width="100%" height={300}>
         <AreaChart
           data={data}

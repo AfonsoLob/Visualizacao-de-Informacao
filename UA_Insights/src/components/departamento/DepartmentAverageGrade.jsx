@@ -66,7 +66,7 @@ useEffect(() => {
 
 return (
     <div className="w-full">
-        <h2>Média das Notas por Ano</h2>
+        <h2 className="text-lg font-bold">Média das Notas por Ano</h2>
         <ResponsiveContainer width="100%" height={350}>
             <LineChart
                 data={data}

@@ -164,7 +164,7 @@ const StudentsDepartmentHeatmap = () => {
 
   return (
     <div ref={wrapperRef} className="w-full">
-      <h2>Estudantes / Departamento</h2>
+      <h2 className="text-lg font-bold">Estudantes / Departamento</h2>
       <svg ref={svgRef}></svg>
     </div>
   );

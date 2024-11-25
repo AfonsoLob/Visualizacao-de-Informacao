@@ -33,7 +33,7 @@ const ApprovalPerYearChart = () => {
 
   return (
     <div className="w-full">
-      <h3>Taxa de Aprovados / Ano</h3>
+      <h3 className="text-xl mb-2 font-bold">Taxa de Aprovados / Ano</h3>
       <ResponsiveContainer width="100%" height={300}>
         <LineChart
           data={data}

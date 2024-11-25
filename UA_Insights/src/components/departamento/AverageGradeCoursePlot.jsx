@@ -72,7 +72,7 @@ const AverageGradeCoursePlot = () => {
         </div>
       ) : (
         <div className="w-full">
-          <h2 className="text-xl font-bold mb-2">Média por Curso</h2>
+          <h2 className="text-xl font-bold mb-2 mt-3">Média por Curso</h2>
 
           {currentYear && (
             <ResponsiveContainer width="100%" height={300}>

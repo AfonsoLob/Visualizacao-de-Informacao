@@ -108,7 +108,7 @@ const DepartmentFailRate = () => {
         </div>
       ) : (
         <div className="w-full">
-          <h2 className="text-xl font-bold mb-4">Taxa de Reprovação por Departamento</h2>
+          <h2 className="text-xl font-bold mt-3 mb-2">Taxa de Reprovação por Departamento</h2>
           
           <ResponsiveContainer width="100%" height={300}>
             <LineChart

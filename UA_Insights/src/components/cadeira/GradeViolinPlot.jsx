@@ -264,7 +264,7 @@ const GradeViolinPlot = () => {
         </div>
       ) : (
         <div ref={wrapperRef} style={{ width: "100%" }}>
-          <h2>Distribuição das notas por ano</h2>
+          <h2 className="text-lg mt-2 font-bold">Distribuição das notas por ano</h2>
           <div ref={svgRef}></div>
         </div>
       )}

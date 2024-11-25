@@ -80,7 +80,7 @@ return (
                 </div>
       ) : (
         <div className="w-full">
-          <h2>Percentagem de Aprovados por Ano</h2>
+          <h2 className="text-xl font-bold mb-4">Percentagem de Aprovados por Ano</h2>
           
           <ResponsiveContainer width="100%" height={300}>
   <BarChart

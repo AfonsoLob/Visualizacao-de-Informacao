@@ -86,7 +86,7 @@ const GiveUp = () => {
         </div>
       ) : (
         <div className="w-full h-full">
-          <h2 className="text-xl font-bold mb-4">Desistências por Ano</h2>
+          <h2 className="text-xl font-bold my-4">Desistências por Ano</h2>
           <ResponsiveContainer width="100%" height={300}>
             <ComposedChart
               data={data}
