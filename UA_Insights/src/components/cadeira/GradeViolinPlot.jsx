@@ -226,8 +226,9 @@ const GradeViolinPlot = () => {
           })
           .on("mousemove", (event) => {
             tooltip
-              .style("top", (event.pageY - 10) + "px")
-              .style("left", (event.pageX + 10) + "px");
+              .style("top", (event.pageY - 280) + "px")
+              .style("left", (event.pageX + 10) + "px")
+              .style("opacity", 0.9);
           })
           .on("mouseout", () => {
             // Reset violin plot style
