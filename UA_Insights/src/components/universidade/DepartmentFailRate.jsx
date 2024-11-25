@@ -36,8 +36,8 @@ const DepartmentFailRate = () => {
           failRate: ((failed / total) * 100).toFixed(2)
         };
       })
-      .sort((a, b) => b.failRate - a.failRate) // Sort by fail rate descending
-      .slice(0, 18); // Take top 10
+      .sort((a, b) => b.failRate - a.failRate)
+      .slice(0, 18);
 
       const result = { year };
       deptRates.forEach(({ dept, failRate }) => {
@@ -57,24 +57,10 @@ const DepartmentFailRate = () => {
 
   // Generate colors for departments
   const colors = [
-    "#1f77b4", // Blue
-    "#ff7f0e", // Orange
-    "#2ca02c", // Green
-    "#d62728", // Red
-    "#9467bd", // Purple
-    "#8c564b", // Brown
-    "#e377c2", // Pink
-    "#7f7f7f", // Gray
-    "#bcbd22", // Lime
-    "#17becf", // Cyan
-    "#f7b6d2", // Light Pink
-    "#c7c7c7", // Light Gray
-    "#9edae5", // Light Cyan
-    "#ffbb78", // Light Orange
-    "#98df8a", // Light Green
-    "#ff9896", // Light Red
-    "#c5b0d5", // Light Purple
-    "#c49c94"  // Light Brown
+    "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", 
+    "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf", 
+    "#f7b6d2", "#c7c7c7", "#9edae5", "#ffbb78", "#98df8a", 
+    "#ff9896", "#c5b0d5", "#c49c94"
   ];
 
   const handleLegendClick = (dept) => {
@@ -89,9 +75,7 @@ const DepartmentFailRate = () => {
     });
   };
 
-  const resetDepartments = () => {
-    setVisibleDepartments(new Set());
-  };
+  const isLineVisible = (dept) => visibleDepartments.has(dept);
 
   return (
     <>
@@ -109,11 +93,22 @@ const DepartmentFailRate = () => {
       ) : (
         <div className="w-full">
           <h2 className="text-xl font-bold mt-3 mb-2">Taxa de Reprovação por Departamento</h2>
-          
+          <button
+            className="mb-4 px-2 py-1 bg-blue-500 text-white rounded"
+            onClick={() => {
+              if (visibleDepartments.size === departments.length) {
+                setVisibleDepartments(new Set());
+              } else {
+                setVisibleDepartments(new Set(departments));
+              }
+            }}
+          >
+            {visibleDepartments.size === departments.length ? 'Ocultar Todos' : 'Mostrar Todos'}
+          </button>
           <ResponsiveContainer width="100%" height={300}>
             <LineChart
               data={data}
-              margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+              margin={{ top: 10, right: 30, left: 0, bottom: 10 }}
             >
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="year" stroke="#ffffff" />
@@ -130,32 +125,31 @@ const DepartmentFailRate = () => {
               <Tooltip 
                 contentStyle={{ backgroundColor: '#2d3448' }}
                 formatter={(value, name) => [`${value}%`, name]}
-                itemSorter={(a) => -parseFloat(a.value)} // Sort in descending order
+                itemSorter={(a) => -parseFloat(a.value)}
               />
               <Legend 
                 onClick={(e) => handleLegendClick(e.value)}
-                wrapperStyle={{ cursor: 'pointer' }} // Change cursor to pointer
+                wrapperStyle={{ cursor: 'pointer' }}
+                payload={departments.map((dept, index) => ({
+                  value: dept,
+                  type: 'line',
+                  color: colors[index % colors.length],
+                  inactive: !isLineVisible(dept)
+                }))}
               />
               {departments.map((dept, index) => (
-                visibleDepartments.has(dept) ? null : (
-                  <Line
-                    key={dept}
-                    type="monotone"
-                    dataKey={dept}
-                    stroke={colors[index % colors.length]}
-                    name={dept}
-                    strokeWidth={2}
-                  />
-                )
+                <Line
+                  key={dept}
+                  type="monotone"
+                  dataKey={dept}
+                  stroke={colors[index % colors.length]}
+                  name={dept}
+                  strokeWidth={2}
+                  hide={!isLineVisible(dept)}
+                />
               ))}
             </LineChart>
           </ResponsiveContainer>
-          <button 
-            onClick={resetDepartments}
-            className="my-2 px-2 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-200 text-sm"
-          >
-            Reset Departments
-          </button>
         </div>
       )}
     </>
