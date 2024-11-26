@@ -1,9 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useState } from 'react';
 
 export const Navbar = () => {
   const location = useLocation();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const isActive = (path) => {
     return location.pathname === path ? 'btn-active bg-primary' : '';
