@@ -1,14 +1,13 @@
 import React, { useState, useEffect} from "react";
 import Slider from "@mui/material/Slider";
-// import { useLocation } from "react-router-dom";
 import { useFilterConfig } from '../hook/useFilterConfig';
 import { useFilters } from '../context/FilterContext';
-import * as d3 from "d3";
 import Select from 'react-select'; // Util porque deixa dar seach e escolher varias cadeiras ao mesmo tempo (se for preciso)
 import { useCourseMapping } from "../context/courseContext";
+import { useData } from "../context/DataContext";
 
 export const Filter = () => {
-
+  const { rawData, loading: dataLoading } = useData();
   const { filters, updateFilter } = useFilters();
   const filterConfig = useFilterConfig();
   const [yearRange, setYearRange] = useState([2012, 2022]);
@@ -16,10 +15,6 @@ export const Filter = () => {
   const minYear = 2012;
   const maxYear = 2022;
   const courseMapping = useCourseMapping();
-
-  // const [selectedOption, setSelectedOption] = useState("");
-  // const location = useLocation();  
-  // const csvFile = "/notas-alunos-2012-2022-corrigido.csv";
 
   
   // Custom styles for react-select to match dark theme
@@ -74,8 +69,7 @@ export const Filter = () => {
       
       for (const filter of dynamicFilters) {
         try {
-          const data = await d3.csv('/notas-alunos-2012-2022-corrigido.csv');
-          const options = Array.from(new Set(data.map(d => d[filter.field])))
+          const options = Array.from(new Set(rawData.map(d => d[filter.field])))
             .sort()
             .map(value => ({ value, label: value }));
           
